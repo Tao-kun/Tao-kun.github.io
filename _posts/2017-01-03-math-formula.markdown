@@ -15,9 +15,9 @@ $$\iint_{D}f(x,y)\mathrm{d}\sigma = \int_{a}^{b}\mathrm{d}x\int_{\phi_{1}(x)}^{\
 
 
 ### 线性代数
-> Linear independence
-> The vectors in a subset $$S=\{\vec v_1,\vec v_2,\dots,\vec v_n\}$$ of a vector space $$\textbf{V}$$ are said to be $$\emph{linearly dependent}$$, if there exist a $$\emph{finite}$$ number of $$\emph{distinct}$$ vectors $$\vec v_1,\vec v_2,\dots,\vec v_k$$ in S and scalars $$a_1, a_2, \dots, a_k$$, not all zero, such that
+Linear independence
+The vectors in a subset $$S=\{\vec v_1,\vec v_2,\dots,\vec v_n\}$$ of a vector space V are said to be linearly dependent, if there exist a finite number of distinct vectors $$\vec v_1,\vec v_2,\dots,\vec v_k$$in S and scalars $$a_1, a_2, \dots, a_k$$, not all zero, such that
 
-> $$a_1\vec v_1+a_2\vec v_2+\dots+a_k\vec v_k=\vec 0$$,
+$$a_1\vec v_1+a_2\vec v_2+\dots+a_k\vec v_k=\vec 0$$,
 
-> where $$\vec 0$$ denotes the zero vector.
+where $$\vec 0$$ denotes the zero vector.
