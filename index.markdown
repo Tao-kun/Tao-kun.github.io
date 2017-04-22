@@ -2,6 +2,7 @@
 layout: default
 title:  "Tao-kun's Blog"
 ---
+
 <!--
 ## Welcome to GitHub Pages
 
@@ -33,6 +34,8 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 -->
+## Welcome to Tao-kun's Blog
+
 ### 文章摘要
 <ul>
   {% for post in site.posts %}
