@@ -4,7 +4,8 @@ tagline:      Tao-kun 的博客
 baseurl:      ""
 paginate:     1
 show_drafts:  nil
-lang:         zh-cn
+lang:         zh-CN
+timezone:     China/Shanghai
 # About/contact
 author:
   name:       Tao-kun
