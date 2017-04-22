@@ -1,1 +1,17 @@
-theme: jekyll-theme-cayman
+# Setup
+title:        Tao-kun's blog
+tagline:      Tao-kun 的博客
+baseurl:      ""
+paginate:     1
+show_drafts:  nil
+
+# About/contact
+author:
+  name:       Tao-kun
+  url:        http://github.com/Tao-kun
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown
