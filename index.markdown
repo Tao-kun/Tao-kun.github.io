@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Index"
+title:  "Tao-kun's Blog"
 ---
 <!--
 ## Welcome to GitHub Pages
