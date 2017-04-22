@@ -5,7 +5,7 @@ baseurl:      ""
 paginate:     1
 show_drafts:  nil
 lang:         zh-CN
-timezone:     China/Shanghai
+timezone:     Asia/Shanghai
 # About/contact
 author:
   name:       Tao-kun
