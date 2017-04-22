@@ -4,7 +4,7 @@ tagline:      Tao-kun 的博客
 baseurl:      ""
 paginate:     1
 show_drafts:  nil
-
+lang:         zh-cn
 # About/contact
 author:
   name:       Tao-kun
