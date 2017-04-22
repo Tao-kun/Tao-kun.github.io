@@ -2,7 +2,7 @@
 layout: default
 title:  "Index"
 ---
-
+<!--
 ## Welcome to GitHub Pages
 
 You can use the editor on GitHub to maintain and preview the content for your website in Markdown files.
@@ -32,7 +32,7 @@ Syntax highlighted code block
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
+-->
 ### 文章摘要
 <ul>
   {% for post in site.posts %}
