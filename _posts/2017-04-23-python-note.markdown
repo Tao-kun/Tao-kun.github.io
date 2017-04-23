@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pytohn 笔记"
+title:  "Python 笔记"
 date:   2017-04-22 12:25:00 +0800
 categories: main
 ---
