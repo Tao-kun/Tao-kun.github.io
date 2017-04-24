@@ -33,13 +33,12 @@ Python的笔记，不定期更新。
 ```
 
 ```
-
 >>> os.listdir("/usr")
 ```
 
 ### 删除文件
 ```
->>> os.remove("filwname")
+>>> os.remove("filename")
 ```
 
 ### 删除单级目录
@@ -90,4 +89,12 @@ Python的笔记，不定期更新。
 
 ```
 >>> os.path.join("/usr", "bin")
+```
+
+## json 模块
+```
+>>> json.dump(object)    # 打包 Python 对象为 JSON 文件
+>>> json.dumps(object, filwname)    # 打包 Python 对象为 JSON 数据(str)
+>>> json.load(file_name)    # 从 JSON 文件读取为 Python 对象
+>>> json.loads(json_str)    # 从 JSON 字符串读取为 Python 对象
 ```
