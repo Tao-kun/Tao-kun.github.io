@@ -13,8 +13,8 @@ categories: main analysis algebra
 
 $$
  \iint_{D}f(x,y)\mathrm{d}\sigma \\
- & = \int_{a}^{b}\mathrm{d}x\int_{\phi_{1}(x)}^{\phi_{2}(x)}f(x,y)\mathrm{d}y \\
- & = \int_{c}^{d}\mathrm{d}y\int_{\psi_{1}(y)}^{\psi_{2}(y)}f(x,y)\mathrm{d}x
+  = \int_{a}^{b}\mathrm{d}x\int_{\phi_{1}(x)}^{\phi_{2}(x)}f(x,y)\mathrm{d}y \\
+  = \int_{c}^{d}\mathrm{d}y\int_{\psi_{1}(y)}^{\psi_{2}(y)}f(x,y)\mathrm{d}x
 $$
 
 D 是由 $$x=a$$、$$x=b$$、$$y=\phi_{1}(x)$$、$$y=\phi_{2}(x)$$ （或 $$y=c$$、$$y=d$$、$$x=\psi_{1}(y)$$、$$x=\psi_{2}(y)$$） 围成的二维平面区域
