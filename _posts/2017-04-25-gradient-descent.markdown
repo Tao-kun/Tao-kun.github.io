@@ -62,9 +62,7 @@ $$\theta_j':=\theta_j+(y^i-h_{\theta}(x^i))x_j^i$$
 ![pic_003]({{"/assets/images/gradient-descent-pic003.png" | site.baseurl }})
 
 ## 小批量梯度下降法（Mini-atch Gradient Descent，MBGD）
-MBGD是BGD和SGD的折衷，MBGD在每次更新参数时使用b个样本
-
-迭代公式为：
+MBGD是BGD和SGD的折衷，MBGD在每次更新参数时使用b个样本，迭代公式为：
 
 $$\theta_j':=\theta_j-\alpha\frac{1}{10}\sum_{k=i}^{i+9}(h_{\theta}(x^{(k)})-y^{(k)})x_j^{(k)}$$
 
