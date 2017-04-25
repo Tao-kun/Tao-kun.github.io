@@ -31,6 +31,9 @@ $$\theta_j'=\theta_j+\frac{1}{m}\sum_{i=1}^{m}(y^1-h_{\theta}(x^i))x_j^i$$
 
 缺点：样本数目过多，训练过程会很慢。
 
+![pic_002]({{"/assets/images/gradient-descent-pic002.png" | site.baseurl }})
+
+
 ## 随机梯度下降法（Stochastic Gradient Descent，SGD）
 解决BGD在大规模下速度减慢的问题，数学形式如下：
 
@@ -47,6 +50,9 @@ $$\theta_j'=\theta_j+(y^i-h_{\theta}(x^i))x_j^i$$
 优点：训练速度快；
 
 缺点：准确度下降，不是全局最优；不易并行实现
+
+![pic_003]({{"/assets/images/gradient-descent-pic003.png" | site.baseurl }})
+
 
 ## 小批量梯度下降法（Mini-atch Gradient Descent，MBGD）
 ## 总结
