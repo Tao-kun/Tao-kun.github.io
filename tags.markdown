@@ -3,7 +3,12 @@ layout: default
 title:  "Tags"
 ---
 
-{% for tag in site.tags %}
-    {{ tag[0] }}
-    {{ tag[1] }}
-{% endfor %}
+<ul>
+  {% for tag in site.tags %}
+    <li>
+    {{tag[0]}}
+    <br />
+    {{ tag[1].title }}
+    </li>
+  {% endfor %}
+</ul>
