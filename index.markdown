@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Tao-kun's Blog"
+title:  "Index - Tao-kun's Blog"
 ---
 
 <!--

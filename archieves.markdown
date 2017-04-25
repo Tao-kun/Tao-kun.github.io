@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Archieves"
+title: "Archieves - Tao-kun's Blog"
 ---
 
 <div id="home">
