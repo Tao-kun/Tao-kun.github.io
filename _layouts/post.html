@@ -5,10 +5,5 @@ layout: default
 <h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date: "%Y年%-m月%-d日 %H:%M" }}</p>
 
-{{ content }}
+{{ content | toc_generate }}
 
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#toc').toc();
-});
-</script>
