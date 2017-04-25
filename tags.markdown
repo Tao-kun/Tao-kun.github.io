@@ -14,7 +14,7 @@ title:  "Tags"
 <ul>
   {% for tag in site.tags %}
     <li>
-    {{ tag[1].excerpt }}
+    {{ tag[1] }}
     </li>
   {% endfor %}
 </ul>
