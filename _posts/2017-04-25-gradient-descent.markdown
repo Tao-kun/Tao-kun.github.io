@@ -23,9 +23,9 @@ $$J_{train}(\theta)=\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^{2}$
 
 $$\frac{\partial J(\theta)}{\partial \theta_j}=-\frac{1}{m}\sum_{i=1}^{m}(y^1-h_{\theta}(x^i))x_j^i$$
 
-（2）按照每个参数$$\theta$$的梯度负方向更新每个$$\theta$$
+（2）按照每个参数$$\theta$$的梯度负方向更新每个参数$$\theta$$
 
-$$\theta_j^`:=\theta_j+\frac{1}{m}\sun_{i=1}{m}(y^1-h_{\theta}(x^i))x_j^i$$
+$$\theta_j^`:=\theta_j+\frac{1}{m}\sum_{i=1}{m}(y^1-h_{\theta}(x^i))x_j^i$$
 
 ## 随机梯度下降法（Stochastic Gradient Descent，SGD）
 ## 小批量梯度下降法（Mini-atch Gradient Descent，MBGD）
