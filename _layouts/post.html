@@ -6,3 +6,9 @@ layout: default
 <p class="meta">{{ page.date | date: "%Y年%-m月%-d日 %H:%M" }}</p>
 
 {{ content }}
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#toc').toc();
+});
+</script>
