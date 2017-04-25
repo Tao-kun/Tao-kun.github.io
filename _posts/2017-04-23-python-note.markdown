@@ -2,7 +2,7 @@
 layout: post
 title:  "Python 笔记"
 date:   2017-04-23 22:36:00 +0800
-categories: python note
+tags: [python, note]
 ---
 
 Python的笔记，不定期更新。
