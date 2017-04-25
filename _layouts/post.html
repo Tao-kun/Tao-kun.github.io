@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
+<div>
+  <h2>{{ page.title }}</h2>
+  <p class="meta">{{ page.date | date: "%Y年%-m月%-d日 %H:%M" }}</p>
 
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date: "%Y年%-m月%-d日 %H:%M" }}</p>
+  {{ content | toc_generate }}
 
-{{ content | toc_generate }}
-
+</div>
