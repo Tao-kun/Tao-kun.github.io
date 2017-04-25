@@ -46,11 +46,11 @@ $$\theta_j':=\theta_j+\frac{1}{m}\sum_{i=1}^{m}(y^i-h_{\theta}(x^i))x_j^i$$
 （1）损失函数表示为
 
 $$
- \begin{split}
-  J(\theta)
-  =\frac{1}{m}\sum_{i=1}^{m}\frac{1}{2}(y^i-h_{\theta}(x^i))^2 \\
-  =\frac{1}{m}\sum_{i=1}^{m}cost(\theta,(x^i,y^i))
- \end{split} \\
+ \begin{equation}\begin{split}
+ J(\theta)
+ =\frac{1}{m}\sum_{i=1}^{m}\frac{1}{2}(y^i-h_{\theta}(x^i))^2 \\
+ =\frac{1}{m}\sum_{i=1}^{m}cost(\theta,(x^i,y^i))
+ \end{split}\end{equation} \\
  cost(\theta,(x^i,y^i))=\frac{1}{2}(y^i-h_{\theta}(x^i))^2
 $$
 
