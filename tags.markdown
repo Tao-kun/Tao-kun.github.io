@@ -6,9 +6,13 @@ title:  "Tags"
 <ul>
   {% for tag in site.tags %}
     <li>
-    {{tag[0]}}
-    <br />
-    {{ tag[1].title }}
-    </li>
+    {{ tag[0] }}
+  {% endfor %}
+</ul>
+
+<ul>
+  {% for tag in site.tags %}
+    <li>
+    {{ tag[1].excerpt }}
   {% endfor %}
 </ul>
