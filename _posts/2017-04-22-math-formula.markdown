@@ -2,7 +2,7 @@
 layout: post
 title:  "实验 Markdown + MathJax 数学公式排版"
 date:   2017-04-22 12:25:02 +0800
-tags: [analysis, algebra]
+tags: [Analysis, Algebra]
 ---
 
 ### 一元二次方程 求根公式

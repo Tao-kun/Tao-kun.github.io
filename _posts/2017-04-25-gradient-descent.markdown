@@ -2,7 +2,7 @@
 layout: post
 title:  "梯度下降法 BGD、SGD、MBGD"
 date:   2017-04-25 13:43:00 +0800
-tags: [machine learning]
+tags: [Machine Learning, Algorithm]
 ---
 
 假设线性回归函数为：
