@@ -25,11 +25,15 @@ $$\frac{\partial J(\theta)}{\partial \theta_j}=-\frac{1}{m}\sum_{i=1}^{m}(y^1-h_
 
 （2）按照每个参数$$\theta$$的梯度负方向更新每个参数$$\theta$$
 
-$$\theta_j'=\theta_j+\frac{1}{m}\sum_{i=1}^{m}(y^1-h_{\theta}(x^i))x_j^i$$
+$$\theta_j':=\theta_j+\frac{1}{m}\sum_{i=1}^{m}(y^1-h_{\theta}(x^i))x_j^i$$
+
+最终得到的是一个全局最优解，但是每迭代一步，都要用到训练集所有的数据，如果样本数目很大，那么这种方法的迭代速度会很慢
 
 优点：全局最优解；易于并行实现；
 
 缺点：样本数目过多，训练过程会很慢。
+
+从迭代的次数上来看，BGD迭代的次数相对较少。其迭代的收敛曲线示意图可以表示如下：
 
 ![pic_002]({{"/assets/images/gradient-descent-pic002.png" | site.baseurl }})
 
@@ -45,16 +49,25 @@ $$
 
 （2）利用每个样本的损失函数对$$\theta$$求骗到得到对应梯度来更新$$\theta$$
 
-$$\theta_j'=\theta_j+(y^i-h_{\theta}(x^i))x_j^i$$
+$$\theta_j':=\theta_j+(y^i-h_{\theta}(x^i))x_j^i$$
+
+随机梯度下降是通过每个样本来迭代更新一次，如果样本量很大的情况（例如几十万），那么可能只用其中几万条或者几千条的样本，就已经将theta迭代到最优解了，对比上面的批量梯度下降，迭代一次需要用到十几万训练样本，一次迭代不可能最优，如果迭代10次的话就需要遍历训练样本10次。但是，SGD伴随的一个问题是噪音较BGD要多，使得SGD并不是每次迭代都向着整体最优化方向。
 
 优点：训练速度快；
 
 缺点：准确度下降，不是全局最优；不易并行实现
 
+从迭代的次数上来看，SGD迭代的次数较多，在解空间的搜索过程看起来很盲目。其迭代的收敛曲线示意图可以表示如下：
+
 ![pic_003]({{"/assets/images/gradient-descent-pic003.png" | site.baseurl }})
 
-
 ## 小批量梯度下降法（Mini-atch Gradient Descent，MBGD）
+MBGD是BGD和SGD的折衷，MBGD在每次更新参数时使用b个样本
+
+迭代公式为：
+
+$$\theta_j':=\theta_j-\alpha\frac{1}{10}\sum_{k=i}^{i+9}(h_{\theta}(x^{(k)})-y^{(k)})x_j^{(k)}$$
+
 ## 总结
 　　Batch gradient descent: Use all examples in each iteration；
 
