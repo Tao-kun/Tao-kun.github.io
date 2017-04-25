@@ -2,7 +2,7 @@
 layout: post
 title:  "梯度下降法 BGD、SGD、MBGD"
 date:   2017-04-25 13:43:00 +0800
-tags: [Machine Learning, Algorithm]
+tags: [Machine Learning, Algorithm, Mathematics]
 ---
 
 梯度下降法的计算过程就是沿梯度下降的方向求解极小值，重复地计算梯度然后对参数进行更新，这一过程称为梯度下降。
