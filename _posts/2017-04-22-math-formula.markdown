@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-jax
 title:  "实验 Markdown + MathJax 数学公式排版"
 date:   2017-04-22 12:25:02 +0800
 categories: analysis algebra
