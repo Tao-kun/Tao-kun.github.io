@@ -6,6 +6,8 @@ paginate:     1
 show_drafts:  nil
 lang:         zh-CN
 timezone:     Asia/Shanghai
+paginate:     5
+future:       false
 # About/contact
 author:
   name:       Tao-kun

@@ -4,8 +4,8 @@ title:  "梯度下降法 BGD、SGD、MBGD"
 date:   2017-04-25 13:43:00 +0800
 tags: [Machine Learning, Algorithm, Mathematics]
 ---
-
 梯度下降法的计算过程就是沿梯度下降的方向求解极小值，重复地计算梯度然后对参数进行更新，这一过程称为梯度下降。
+
 
 假设线性回归函数为：
 
@@ -79,7 +79,10 @@ $$\theta_j':=\theta_j-\alpha\frac{1}{10}\sum_{k=i}^{i+9}(h_{\theta}(x^{(k)})-y^{
 　　Stochastic gradient descent: Use 1 example in each iteration；
 
 　　Mini-batch gradient descent: Use b examples in each iteration.
+## 参考
 
-
-### 参考
 [[Machine Learning] 梯度下降法的三种形式BGD、SGD以及MBGD](http://www.cnblogs.com/maybe2030/p/5089753.html)
+
+[An overview of gradient descent optimization algorithms](http://sebastianruder.com/optimizing-gradient-descent/)
+
+[An overview of gradient descent optimization algorithms(arXiv)](https://arxiv.org/abs/1609.04747)
