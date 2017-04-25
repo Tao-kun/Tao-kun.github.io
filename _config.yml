@@ -18,4 +18,4 @@ gems:
 
 #Others
 markdown:     kramdown
-highlighter:  pygments
+highlighter:  rouge
