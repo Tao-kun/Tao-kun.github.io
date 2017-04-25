@@ -4,7 +4,7 @@ title:  "Tags - Tao-kun's Blog"
 ---
 
 <ul>
-	{% for category in site.categories%}
+	{% for category in site.categories %}
 	<li>
 		<a href="/categories/{{ category | first }}/" title="view all
 posts">{{ category | first }} {{ category | last | size }}</a>
