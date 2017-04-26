@@ -25,8 +25,8 @@ $$J_{train}(\theta)=\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^{2}$
 
 $$\frac{\partial J(\theta)}{\partial \theta_j} \\
 =\frac{\partial}{\partial \theta_j} \frac{1}{2m} (h_{\theta}(x^{(i)})-y^{(i)})^2 \\
-=2\dot\frac{1}{2m}(h_{\theta}(x{(i)})-y{(i)})\dot\frac{\partial}{\partial \theta_j}(h_{\theta}(x^{(i)})-y^{(i)}) \\
-=\frac{1}{m}(h_{\theta}(x^{(i)})-y^{(i)})\dot\frac{\partial}{\partial \theta_j}(\sum_{j=0}^n\theta_jx_j^{(i)}-y^{(i)}) \\
+=2\cdot\frac{1}{2m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot\frac{\partial}{\partial \theta_j}(h_{\theta}(x^{(i)})-y^{(i)}) \\
+=\frac{1}{m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot\frac{\partial}{\partial \theta_j}(\sum_{j=0}^n\theta_jx_j^{(i)}-y^{(i)}) \\
 =-\frac{1}{m}\sum_{i=1}^{m}(y^{(i)}-h_{\theta}(x^{(i)}))x_j^{(i)}$$
 
 （2）按照每个参数$$\theta$$的梯度负方向更新每个参数$$\theta$$
