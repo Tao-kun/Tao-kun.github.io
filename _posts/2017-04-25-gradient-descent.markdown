@@ -25,7 +25,7 @@ $$J_{train}(\theta)=\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^{2}$
 
 $$ \begin{equation}\begin{split}
 \frac{\partial J(\theta)}{\partial \theta_j}
-=\frac{\partial}{\partial \theta_j} \frac{1}{2m} (h_{\theta}(x^{(i)})-y^{(i)})^2 \\
+&=\frac{\partial}{\partial \theta_j} \frac{1}{2m} (h_{\theta}(x^{(i)})-y^{(i)})^2 \\
 &\quad=2\cdot\frac{1}{2m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot\frac{\partial}{\partial \theta_j}(h_{\theta}(x^{(i)})-y^{(i)}) \\
 &\quad=\frac{1}{m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot\frac{\partial}{\partial \theta_j}(\sum_{j=0}^n\theta_jx_j^{(i)}-y^{(i)}) \\
 &\quad=-\frac{1}{m}\sum_{i=1}^{m}(y^{(i)}-h_{\theta}(x^{(i)}))x_j^{(i)}
@@ -53,8 +53,7 @@ $$\theta_j':=\theta_j+\frac{1}{m}\sum_{i=1}^{m}(y^i-h_{\theta}(x^i))x_j^i$$
 
 $$
  \begin{equation}\begin{split}
- J(\theta)
- =\frac{1}{m}\sum_{i=1}^{m}\frac{1}{2}(y^i-h_{\theta}(x^i))^2 \\
+ J(\theta)&=\frac{1}{m}\sum_{i=1}^{m}\frac{1}{2}(y^i-h_{\theta}(x^i))^2 \\
  &\quad=\frac{1}{m}\sum_{i=1}^{m}cost(\theta,(x^i,y^i))
  \end{split}\end{equation} \\
  cost(\theta,(x^i,y^i))=\frac{1}{2}(y^i-h_{\theta}(x^i))^2
