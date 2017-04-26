@@ -59,7 +59,7 @@ $$
  cost(\theta,(x^{(i)},y^{(i)}))=\frac{1}{2}(y^{(i)}-h_{\theta}(x^{(i)}))^2
 $$
 
-（2）利用每个样本的损失函数对$$\theta$$求骗到得到对应梯度来更新$$\theta$$
+（2）利用每个样本的损失函数对$$\theta$$求偏导得到对应梯度来更新$$\theta$$
 
 $$\theta_j':=\theta_j+(y^{(i)}-h_{\theta}(x^{(i)}))x_j^{(i)}$$
 
@@ -78,7 +78,7 @@ MBGD是BGD和SGD的折衷，MBGD在每次更新参数时使用b个样本，迭�
 
 $$\theta_j':=\theta_j-\alpha\frac{1}{b}\sum_{k=i}^{i+b-1}(h_{\theta}(x^{(k)})-y^{(k)})x_j^{(k)}$$
 
-其中，$$\alpha$$表示_学习率_(_Learning Rate_)
+其中，$$\alpha$$表示 _学习率_ (_Learning Rate_)
 
 ## 总结
 　　Batch gradient descent: Use all examples in each iteration；
