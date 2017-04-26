@@ -56,12 +56,12 @@ $$
  J(\theta)&=\frac{1}{m}\sum_{i=1}^{m}\frac{1}{2}(y^{(i)}-h_{\theta}(x^{(i)}))^2 \\
  &=\frac{1}{m}\sum_{i=1}^{m}cost(\theta,(x^{(i)},y^{(i)}))
  \end{split}\end{equation} \\
- cost(\theta,(x^i,y^i))=\frac{1}{2}(y^i-h_{\theta}(x^i))^2
+ cost(\theta,(x^{(i)},y^{(i)}))=\frac{1}{2}(y^{(i)}-h_{\theta}(x^{(i)}))^2
 $$
 
 （2）利用每个样本的损失函数对$$\theta$$求骗到得到对应梯度来更新$$\theta$$
 
-$$\theta_j':=\theta_j+(y^i-h_{\theta}(x^i))x_j^i$$
+$$\theta_j':=\theta_j+(y^{(i)}-h_{\theta}(x^{(i)}))x_j^{(i)}$$
 
 随机梯度下降是通过每个样本来迭代更新一次，如果样本量很大的情况（例如几十万），那么可能只用其中几万条或者几千条的样本，就已经将$$\theta$$迭代到最优解了，对比上面的批量梯度下降，迭代一次需要用到十几万训练样本，一次迭代不可能最优，如果迭代10次的话就需要遍历训练样本10次。但是，SGD伴随的一个问题是噪音较BGD要多，使得SGD并不是每次迭代都向着整体最优化方向。
 
