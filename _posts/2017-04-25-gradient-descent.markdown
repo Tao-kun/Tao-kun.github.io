@@ -9,7 +9,7 @@ tags: [Machine Learning, Algorithm, Mathematics]
 
 假设线性回归函数为：
 
-$$h_{\theta}=\sum_{j=0}^{n}\theta_{j}x_{j}$$
+$$h_{\theta}=\sum_{j=0}^{n}\theta_{j}x_{j}=\theta^Tx$$
 
 其损失函数为：
 
@@ -23,7 +23,11 @@ $$J_{train}(\theta)=\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^{2}$
 
 （1）对损失函数求偏导
 
-$$\frac{\partial J(\theta)}{\partial \theta_j}=-\frac{1}{m}\sum_{i=1}^{m}(y^i-h_{\theta}(x^i))x_j^i$$
+$$\frac{\partial J(\theta)}{\partial \theta_j} \\
+=\frac{\partial}{\partial \theta_j} \frac{1}{2m} (h_{\theta}(x^{(i)})-y^{(i)})^2 \\
+=2\dot\frac{1}{2m}(h_{\theta}(x{(i)})-y{(i)})\dot\frac{\partial}{\partial \theta_j}(h_{\theta}(x^{(i)})-y^{(i)}) \\
+=\frac{1}{m}(h_{\theta}(x^{(i)})-y^{(i)})\dot\frac{\partial}{\partial \theta_j}(\sum_{j=0}^n\theta_jx_j^{(i)}-y^{(i)}) \\
+=-\frac{1}{m}\sum_{i=1}^{m}(y^{(i)}-h_{\theta}(x^{(i)}))x_j^{(i)}$$
 
 （2）按照每个参数$$\theta$$的梯度负方向更新每个参数$$\theta$$
 
@@ -71,7 +75,9 @@ $$\theta_j':=\theta_j+(y^i-h_{\theta}(x^i))x_j^i$$
 ## 小批量梯度下降法（Mini-atch Gradient Descent，MBGD）
 MBGD是BGD和SGD的折衷，MBGD在每次更新参数时使用b个样本，迭代公式为：
 
-$$\theta_j':=\theta_j-\alpha\frac{1}{10}\sum_{k=i}^{i+9}(h_{\theta}(x^{(k)})-y^{(k)})x_j^{(k)}$$
+$$\theta_j':=\theta_j-\alpha\frac{1}{b}\sum_{k=i}^{i+9}(h_{\theta}(x^{(k)})-y^{(k)})x_j^{(k)}$$
+
+其中，$$\alpha$$表示_学习率_(_Learning Rate_)
 
 ## 总结
 　　Batch gradient descent: Use all examples in each iteration；
