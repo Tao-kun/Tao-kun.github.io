@@ -15,7 +15,7 @@ tags: [Mathematics]
 
 $$
  \begin{equation}\begin{split}
- \iint_{D}f(x,y)\mathrm{d}\sigma \\
+ \iint_{D}f(x,y)\mathrm{d}\sigma
  &= \int_{a}^{b}\mathrm{d}x\int_{\phi_{1}(x)}^{\phi_{2}(x)}f(x,y)\mathrm{d}y \\
  &= \int_{c}^{d}\mathrm{d}y\int_{\psi_{1}(y)}^{\psi_{2}(y)}f(x,y)\mathrm{d}x
  \end{split}\end{equation}
