@@ -28,12 +28,12 @@ $$ \begin{equation}\begin{split}
 &=\frac{\partial}{\partial \theta_j} \frac{1}{2m} (h_{\theta}(x^{(i)})-y^{(i)})^2 \\
 &=2\cdot\frac{1}{2m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot\frac{\partial}{\partial \theta_j}(h_{\theta}(x^{(i)})-y^{(i)}) \\
 &=\frac{1}{m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot\frac{\partial}{\partial \theta_j}(\sum_{j=0}^n\theta_jx_j^{(i)}-y^{(i)}) \\
-&=-\frac{1}{m}\sum_{i=1}^{m}(y^{(i)}-h_{\theta}(x^{(i)}))x_j^{(i)}
+&=\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})x_j^{(i)}
 \end{split}\end{equation}$$
 
 （2）按照每个参数$$\theta$$的梯度负方向更新每个参数$$\theta$$
 
-$$\theta_j':=\theta_j+\frac{1}{m}\sum_{i=1}^{m}(y^i-h_{\theta}(x^i))x_j^i$$
+$$\theta_j':=\theta_j-\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})x_j^{(i)}$$
 
 最终得到的是一个全局最优解，但是每迭代一步，都要用到训练集所有的数据，如果样本数目很大，那么这种方法的迭代速度会很慢
 
@@ -53,8 +53,8 @@ $$\theta_j':=\theta_j+\frac{1}{m}\sum_{i=1}^{m}(y^i-h_{\theta}(x^i))x_j^i$$
 
 $$
  \begin{equation}\begin{split}
- J(\theta)&=\frac{1}{m}\sum_{i=1}^{m}\frac{1}{2}(y^i-h_{\theta}(x^i))^2 \\
- &=\frac{1}{m}\sum_{i=1}^{m}cost(\theta,(x^i,y^i))
+ J(\theta)&=\frac{1}{m}\sum_{i=1}^{m}\frac{1}{2}(y^{(i)}-h_{\theta}(x^{(i)}))^2 \\
+ &=\frac{1}{m}\sum_{i=1}^{m}cost(\theta,(x^{(i)},y^{(i)}))
  \end{split}\end{equation} \\
  cost(\theta,(x^i,y^i))=\frac{1}{2}(y^i-h_{\theta}(x^i))^2
 $$
@@ -76,7 +76,7 @@ $$\theta_j':=\theta_j+(y^i-h_{\theta}(x^i))x_j^i$$
 ## 小批量梯度下降法（Mini-atch Gradient Descent，MBGD）
 MBGD是BGD和SGD的折衷，MBGD在每次更新参数时使用b个样本，迭代公式为：
 
-$$\theta_j':=\theta_j-\alpha\frac{1}{b}\sum_{k=i}^{i+9}(h_{\theta}(x^{(k)})-y^{(k)})x_j^{(k)}$$
+$$\theta_j':=\theta_j-\alpha\frac{1}{b}\sum_{k=i}^{i+b-1}(h_{\theta}(x^{(k)})-y^{(k)})x_j^{(k)}$$
 
 其中，$$\alpha$$表示_学习率_(_Learning Rate_)
 
