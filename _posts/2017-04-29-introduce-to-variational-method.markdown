@@ -76,7 +76,7 @@ $$
 \begin{align*} 
 \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \frac{\int_a^b (\delta y(x))^2 \mbox{d}x}{\max_{a \leq x \leq b} |\delta y(x)|}
 &\leq \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \frac{\left( \max_{a \leq x \leq b} |\delta y(x)| \right)^2 (b-a)}{\max_{a \leq x \leq b} |\delta y(x)|} \\
-&= \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \max_{a \leq x \leq b} |\delta y(x)| (b-a) \\
+&= \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} [\max_{a \leq x \leq b}] |\delta y(x)| (b-a) \\
 &= 0
 \end{align*}
 $$
