@@ -32,7 +32,11 @@ $$\begin{align*} \max_{a \leq x \leq b} |y_1(x) - y(x)| < \frac{\epsilon}{b-a} \
 
 则有
 
-$$\begin{align*} \left| Q[y_1(x)] - Q[y(x)] \right| = \left| \int_a^b \left(y_1(x) - y(x)\right) \mathrm{d}x \right| \leq \int_a^b |y_1(x) - y(x)| \mathrm{d}x < \int_a^b \frac{\epsilon}{b-a} \mathrm{d}x = \epsilon \end{align*}$$
+$$\begin{align*} \left| Q[y_1(x)] - Q[y(x)] \right| \\ 
+&= \left| \int_a^b \left(y_1(x) - y(x)\right) \mathrm{d}x \right| \\
+&\leq \int_a^b |y_1(x) - y(x)| \mathrm{d}x \\
+&< \int_a^b \frac{\epsilon}{b-a} \mathrm{d}x \\
+&= \epsilon \end{align*}$$
 
 即$$Q[y(x)]$$是连续泛函.
 
@@ -54,7 +58,13 @@ $$\begin{align*} Q[c_1 y_1(x) + c_2 y_2(x)] = c_1 Q[y_1(x)] + c_2 Q[y_2(x)] \end
 
 + 泛函变分：先来看一个例子，设泛函$$Q[f(x)]=\int_a^b y^2(x)\mathrm{d}x$$，函数$$y_1(x)=y(x) + \delta y(x)$$是对$$y(x)$$的一个扰动，则$$Q[f(x)]$$的增量为
 
-$$\Delta Q=Q[y_1(x)]-Q[y(x)]=Q[y(x)+\delta y(x)]-Q[y(x)]=\int_a^b (y(x) + \delta y(x))^2 \mathrm{d}x-\int_a^b y^2(x) \mathrm{d}x$$
+$$
+\begin{align*} 
+\Delta Q=Q[y_1(x)]-Q[y(x)] \\
+&=Q[y(x)+\delta y(x)]-Q[y(x)] \\
+&=\int_a^b (y(x) + \delta y(x))^2 \mathrm{d}x-\int_a^b y^2(x) \mathrm{d}x
+\end{align*}
+$$
 
 可见$$\Delta Q$$由两部分构成，将第一项记为
 
@@ -65,7 +75,7 @@ $$T[y(x),\delta y(x)] = \int_a^b 2y(x) \delta y(x) \mathrm{d}x$$
 $$
 \begin{align*} 
 \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \frac{\int_a^b (\delta y(x))^2 \mbox{d}x}{\max_{a \leq x \leq b} |\delta y(x)|}
-\leq \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \frac{\left( \max_{a \leq x \leq b} |\delta y(x)| \right)^2 (b-a)}{\max_{a \leq x \leq b} |\delta y(x)|} \\
+&\leq \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \frac{\left( \max_{a \leq x \leq b} |\delta y(x)| \right)^2 (b-a)}{\max_{a \leq x \leq b} |\delta y(x)|} \\
 &= \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \max_{a \leq x \leq b} |\delta y(x)| (b-a) \\
 &= 0
 \end{align*}
