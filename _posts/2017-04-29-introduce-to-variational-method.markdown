@@ -32,7 +32,8 @@ $$\begin{align*} \max_{a \leq x \leq b} |y_1(x) - y(x)| < \frac{\epsilon}{b-a} \
 
 则有
 
-$$\begin{align*} \left| Q[y_1(x)] - Q[y(x)] \right| \\ 
+$$\begin{align*} 
+\left| Q[y_1(x)] - Q[y(x)] \right|
 &= \left| \int_a^b \left(y_1(x) - y(x)\right) \mathrm{d}x \right| \\
 &\leq \int_a^b |y_1(x) - y(x)| \mathrm{d}x \\
 &< \int_a^b \frac{\epsilon}{b-a} \mathrm{d}x \\
@@ -60,7 +61,7 @@ $$\begin{align*} Q[c_1 y_1(x) + c_2 y_2(x)] = c_1 Q[y_1(x)] + c_2 Q[y_2(x)] \end
 
 $$
 \begin{align*} 
-\Delta Q=Q[y_1(x)]-Q[y(x)] \\
+\Delta Q=Q[y_1(x)]-Q[y(x)]
 &=Q[y(x)+\delta y(x)]-Q[y(x)] \\
 &=\int_a^b (y(x) + \delta y(x))^2 \mathrm{d}x-\int_a^b y^2(x) \mathrm{d}x
 \end{align*}
