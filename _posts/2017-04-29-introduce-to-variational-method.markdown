@@ -51,7 +51,7 @@ $$\begin{align*} Q[y_1(x)] \leq Q[y(x)] \end{align*}$$
 
 则称泛函Q[y(x)]在y(x)的某个ε-邻域内取极值.
 
-+ 线性泛函：若对于任意常数$$c1$$和$$c2$$，$$Q[f(x)]$$满足
++ 线性泛函：若对于任意常数$$c_1$$和$$c_2$$，$$Q[f(x)]$$满足
 
 $$\begin{align*} Q[c_1 y_1(x) + c_2 y_2(x)] = c_1 Q[y_1(x)] + c_2 Q[y_2(x)] \end{align*}$$
 
@@ -61,7 +61,8 @@ $$\begin{align*} Q[c_1 y_1(x) + c_2 y_2(x)] = c_1 Q[y_1(x)] + c_2 Q[y_2(x)] \end
 
 $$
 \begin{align*} 
-\Delta Q=Q[y_1(x)]-Q[y(x)]
+\Delta Q
+&=Q[y_1(x)]-Q[y(x)] \\
 &=Q[y(x)+\delta y(x)]-Q[y(x)] \\
 &=\int_a^b (y(x) + \delta y(x))^2 \mathrm{d}x-\int_a^b y^2(x) \mathrm{d}x
 \end{align*}
@@ -77,7 +78,7 @@ $$
 \begin{align*} 
 \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \frac{\int_a^b (\delta y(x))^2 \mbox{d}x}{\max_{a \leq x \leq b} |\delta y(x)|}
 &\leq \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \frac{\left( \max_{a \leq x \leq b} |\delta y(x)| \right)^2 (b-a)}{\max_{a \leq x \leq b} |\delta y(x)|} \\
-&= \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} [\max_{a \leq x \leq b}] |\delta y(x)| (b-a) \\
+&= \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} [\max_{a \leq x \leq b} |\delta y(x)| ] (b-a) \\
 &= 0
 \end{align*}
 $$
