@@ -65,9 +65,9 @@ $$T[y(x),\delta y(x)] = \int_a^b 2y(x) \delta y(x) \mathrm{d}x$$
 $$
 \begin{align*} 
 \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \frac{\int_a^b (\delta y(x))^2 \mbox{d}x}{\max_{a \leq x \leq b} |\delta y(x)|}
-\leq \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \frac{\left( \max_{a \leq x \leq b} |\delta y(x)| \right)^2 (b-a)}{\max_{a \leq x \leq b} |\delta y(x)|} 
-= \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \max_{a \leq x \leq b} |\delta y(x)| (b-a) 
-= 0
+\leq \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \frac{\left( \max_{a \leq x \leq b} |\delta y(x)| \right)^2 (b-a)}{\max_{a \leq x \leq b} |\delta y(x)|} \\
+&= \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \max_{a \leq x \leq b} |\delta y(x)| (b-a) \\
+&= 0
 \end{align*}
 $$
 
@@ -85,7 +85,7 @@ $$\Delta Q=T[y(x),\delta y(x)]+o(\delta y(x))$$
 
 下面有三个具体的应用
 
-1.求连接$$(0,0)$$和$$(1,1)$$的所有曲线中长度最短的曲线.即求泛函$$\int_0^1 \sqrt{1 + y'^2} \mathrm{d}x$$的极值，记$$F(x, y(x), y'(x)) = \sqrt{1 + y'^2}$$，于是
++ 求连接$$(0,0)$$和$$(1,1)$$的所有曲线中长度最短的曲线.即求泛函$$\int_0^1 \sqrt{1 + y'^2} \mathrm{d}x$$的极值，记$$F(x, y(x), y'(x)) = \sqrt{1 + y'^2}$$，于是
 
 $$\begin{align*}
 F_y & = 0 \\
@@ -105,7 +105,7 @@ $$
 
 $$\begin{align*}\frac{y'}{\sqrt{1 + y'^2}} = C \end{align*}$$
 
-，其中$$C$$为某一常数，整理得
+其中$$C$$为某一常数，整理得
 
 $$\begin{align*} y' = \pm \frac{c}{\sqrt{1-c^2}} \end{align*}$$
 
