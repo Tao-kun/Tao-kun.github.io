@@ -5,7 +5,7 @@ date:   2017-04-23 22:36:00 +0800
 tags: [Python, Note]
 ---
 
-Python的笔记，不定期更新。
+Python的笔记，不定期更新.
 
 ## os模块
 
@@ -92,8 +92,10 @@ Python的笔记，不定期更新。
 
 ## json 模块
 ```python
+# 序列化
 >>> json.dump(object. filename)    # 打包 Python 对象为 JSON 文件
 >>> json.dumps(object)    # 打包 Python 对象为 JSON 字符串
+# 反序列化
 >>> json.load(filename)    # 从 JSON 文件读取为 Python 对象
 >>> json.loads(json_str)    # 从 JSON 字符串读取为 Python 对象
 ```
