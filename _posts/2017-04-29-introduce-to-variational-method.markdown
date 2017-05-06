@@ -87,16 +87,17 @@ Q[c_1 y_1(x) + c_2 y_2(x)]
 \end{align*}
 $$
 
-则称$$Q[f(x)]$$是线性泛函
+则称$$Q[y(x)]$$是线性泛函
 
-+ 泛函变分：先来看一个例子，设泛函$$Q[f(x)]=\int_a^b y^2(x)\mathrm{d}x$$，函数$$y_1(x)=y(x) + \delta y(x)$$是对$$y(x)$$的一个扰动，则$$Q[f(x)]$$的增量为
++ 泛函变分：先来看一个例子，设泛函$$Q[y(x)]=\int_a^b y^2(x)\mathrm{d}x$$，函数$$y_1(x)=y(x) + \delta y(x)$$是对$$y(x)$$的一个扰动，则$$Q[y(x)]$$的增量为
 
 $$
 \begin{align*} 
 \Delta Q
 &=Q[y_1(x)]-Q[y(x)] \\
 &=Q[y(x)+\delta y(x)]-Q[y(x)] \\
-&=\int_a^b (y(x) + \delta y(x))^2 \mathrm{d}x-\int_a^b y^2(x) \mathrm{d}x
+&=\int_a^b (y(x) + \delta y(x))^2 \mathrm{d}x - \int_a^b y^2(x) \mathrm{d}x \\
+&=\int_a^b 2y(x) \delta y(x) \mathrm{d}x + \int_a^b(\delta y(x))^2 \mathrm{d}x
 \end{align*}
 $$
 
@@ -134,7 +135,11 @@ $$
 
 ## 预备定理
 
-若函数$$y=f(x)$$在$$[a,b]$$上连续且$$\int_a^bf(x)\eta(x)=0$$，其中$$\eta(x)$$在$$[a,b]$$上有连续导数，$$\eta(a)=\eta(b)=0$$且$$|\eta(x)|<\epsilon$$（$$\epsilon \in \mathbb{R^+}$$）
+若函数$$y=f(x)$$在$$[a,b]$$上连续且$$\int_a^b f(x)\eta(x)=0$$，其中$$\eta(x)$$在$$[a,b]$$上有连续导数，$$\eta(a)=\eta(b)=0$$且
+$$|\eta(x)|<\epsilon$$
+（
+$$\epsilon \in \mathbb{R^+}$$
+）
 
 ## Euler-Lagrange方程（ E-L equation）的推导
 

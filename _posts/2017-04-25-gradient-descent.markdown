@@ -19,9 +19,16 @@ $$
 
 其损失函数为：
 
-$$\begin{align*}J_{train}(\theta)=\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^{2}\end{align*}$$
+$$
+\begin{align*}
+J_{train}(\theta)
+=\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^{2}
+\end{align*}
+$$
 
-一阶导数表示为$$\nabla_{\theta}J=\frac{\partial J}{\partial \theta}$$
+一阶导数表示为
+
+$$\nabla_{\theta}J=\frac{\partial J}{\partial \theta}$$
 
 某二维参数组（$$\theta_{0}$$ 和 $$\theta_{1}$$）对应损失函数可视化图为：
 ![pic_001]({{"/assets/images/gradient-descent-pic001.png" | site.baseurl }})
