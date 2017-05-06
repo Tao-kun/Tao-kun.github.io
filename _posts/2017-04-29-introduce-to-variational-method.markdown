@@ -97,7 +97,7 @@ $$
 &=Q[y_1(x)]-Q[y(x)] \\
 &=Q[y(x)+\delta y(x)]-Q[y(x)] \\
 &=\int_a^b (y(x) + \delta y(x))^2 \mathrm{d}x - \int_a^b y^2(x) \mathrm{d}x \\
-&=\int_a^b 2y(x) \delta y(x) \mathrm{d}x + \int_a^b(\delta y(x))^2 \mathrm{d}x
+&=\int_a^b 2y(x)\cdot\delta y(x) \mathrm{d}x + \int_a^b(\delta y(x))^2 \mathrm{d}x
 \end{align*}
 $$
 
