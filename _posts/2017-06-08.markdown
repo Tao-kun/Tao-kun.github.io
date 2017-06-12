@@ -1,0 +1,75 @@
+```python
+class Stack:
+    def __init__(self):
+        self.__stack = []
+
+    def push(self,elem):
+        self.__stack.append(elem)
+
+    def pop(self):
+        return self.__stack.pop()
+
+    def __len__(self):
+        return len(self.__stack)
+
+    def __repr__(self):
+        self.__stack = [str(x) for x in self.__stack] 
+        return "[{}]".format(", ".join(self.__stack))
+
+input1 = input()
+input2 = input()
+
+stack1 = Stack()
+stack2 = Stack()
+stack3 = Stack()
+
+for i in input1:
+    stack1.push(i)
+for i in input2:
+    stack2.push(i)
+
+tmp = 0
+while ((len(stack1) != 0) and (len(stack2) != 0)):
+    tmp += int(stack1.pop()) + int(stack2.pop())
+    stack3.push(tmp % 10)
+    tmp = int(tmp / 10)
+
+if tmp != 0:
+    stack3.push(tmp)
+
+result = ""
+while len(stack3) != 0:
+    result += str(stack3.pop())
+
+print(int(result))
+```
+
+
+```python
+if __name__ == "__main__":
+    passwd = list(range(1,26,5))
+    str_raw = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    str_encode = ""
+    str_decode = ""
+    passwd_encode = passwd.copy()
+    passwd_decode = passwd.copy()
+
+    #encode
+    for i in str_raw:
+        ascii_num = ord(i) + passwd_encode[0]
+        while ascii_num > 128:
+            ascii_num -= 128
+        str_encode += chr(ascii_num)
+        passwd_encode.append(passwd_encode[0])
+        passwd_encode.remove(passwd_encode[0])
+    print(str_encode)
+    #decode
+    for i in str_encode:
+        ascii_num = ord(i) - passwd_decode[0]
+        while ascii_num < 0:
+            ascii_num += 128
+        str_decode += chr(ascii_num)
+        passwd_decode.append(passwd_decode[0])
+        passwd_decode.remove(passwd_decode[0])
+    print(str_decode)
+```

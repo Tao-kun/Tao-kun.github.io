@@ -11,8 +11,7 @@ Python的笔记，不定期更新.
 
 ### 系统类型
 ```python
->>> os.name   
->>> os.uname()
+>>> os.name
 ```
 
 ### 执行系统命令

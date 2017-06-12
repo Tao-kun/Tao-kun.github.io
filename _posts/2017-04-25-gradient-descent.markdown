@@ -30,11 +30,11 @@ $$
 
 $$\nabla_{\theta}J=\frac{\partial J}{\partial \theta}$$
 
-某二维参数组（$$\theta_{0}$$ 和 $$\theta_{1}$$）对应损失函数可视化图为：
+某二维参数组（$\theta_{0}$ 和 $\theta_{1}$）对应损失函数可视化图为：
 ![pic_001]({{"/assets/images/gradient-descent-pic001.png" | site.baseurl }})
 
 ## 批量梯度下降法（Batch Gradient Descent，BGD）
-梯度下降的最原始的形式，按照每个参数$$\theta$$的梯度负方向更新每个参数$$\theta$$
+梯度下降的最原始的形式，按照每个参数$\theta$的梯度负方向更新每个参数$\theta$：
 
 $$
 \begin{align*}
@@ -44,7 +44,7 @@ $$
 \end{align*}
 $$
 
-其中，$$\eta$$表示 _学习率_ (_Learning Rate_)。最终得到的是一个全局最优解，但是每迭代一步，都要用到训练集所有的数据，如果样本数目很大，那么这种方法的迭代速度会很慢。
+其中，$\eta$表示 _学习率_ (_Learning Rate_)。最终得到的是一个全局最优解，但是每迭代一步，都要用到训练集所有的数据，如果样本数目很大，那么这种方法的迭代速度会很慢。
 
 其中求偏导数过程为
 
@@ -81,7 +81,7 @@ J(\theta)
 cost(\theta,(x^{(i)},y^{(i)}))=\frac{1}{2}(y^{(i)}-h_{\theta}(x^{(i)}))^2
 $$
 
-（2）利用每个样本的损失函数$$cost(\theta,(x^{(i)},y^{(i)}))$$对$$\theta$$求偏导得到对应梯度来更新$$\theta$$，即
+（2）利用每个样本的损失函数$cost(\theta,(x^{(i)},y^{(i)}))$对$\theta$求偏导得到对应梯度来更新$\theta$，即
 
 $$
 \begin{align*}
@@ -91,9 +91,9 @@ $$
 \end{align*}
 $$
 
-其中，$$\eta$$表示 _学习率_ (_Learning Rate_)
+其中，$\eta$表示 _学习率_ (_Learning Rate_)
 
-随机梯度下降是通过每个样本来迭代更新一次，如果样本量很大的情况（例如几十万），那么可能只用其中几万条或者几千条的样本，就已经将$$\theta$$迭代到最优解了，对比上面的批量梯度下降，迭代一次需要用到十几万训练样本，一次迭代不可能最优，如果迭代10次的话就需要遍历训练样本10次.但是，SGD伴随的一个问题是噪音较BGD要多，使得SGD并不是每次迭代都向着整体最优化方向.
+随机梯度下降是通过每个样本来迭代更新一次，如果样本量很大的情况（例如几十万），那么可能只用其中几万条或者几千条的样本，就已经将$\theta$迭代到最优解了，对比上面的批量梯度下降，迭代一次需要用到十几万训练样本，一次迭代不可能最优，如果迭代10次的话就需要遍历训练样本10次.但是，SGD伴随的一个问题是噪音较BGD要多，使得SGD并不是每次迭代都向着整体最优化方向.
 
 优点：训练速度快；
 
@@ -104,7 +104,7 @@ $$
 ![pic_003]({{"/assets/images/gradient-descent-pic003.png" | site.baseurl }})
 
 ## 小批量/批梯度下降法（Mini-atch Gradient Descent，MBGD）
-MBGD是BGD和SGD的折衷，MBGD在每次更新参数时使用$$n$$个样本，迭代公式为：
+MBGD是BGD和SGD的折衷，MBGD在每次更新参数时使用$n$个样本，迭代公式为：
 
 $$
 \begin{align*}
@@ -112,7 +112,7 @@ $$
 \end{align*}
 $$
 
-其中，$$\eta$$表示 _学习率_ (_Learning Rate_)，$$n$$表示 _批尺寸_（_Batch size_）
+其中，$\eta$表示 _学习率_ (_Learning Rate_)，$n$表示 _批尺寸_（_Batch size_）
 
 ## 总结
 　　Batch gradient descent: Use all examples in each iteration；
