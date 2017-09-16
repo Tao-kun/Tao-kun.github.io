@@ -23,7 +23,10 @@ Python的笔记，不定期更新.
 ```python
 >>> os.getcwd()
 ```
-
+### 更改工作路径
+```python
+>>> os.chdir(path)
+```
 ### 返回目录文件（夹）
 ```python
 #相对于os.getcwd
