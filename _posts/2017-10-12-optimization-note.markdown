@@ -104,7 +104,15 @@ $$
 $$
 
 由$C$的凸性知$\alpha \boldsymbol{x}_1 + (1 - \alpha) \boldsymbol{y}_1 \in C$，故$\alpha \boldsymbol{x} + (1 - \alpha) \boldsymbol{y} \in invimg(C)$.
-下面介绍一些特殊的凸集.一个 超平面 (hyperplane)对应如下形式的线性方程，$\begin{align*}\{ \boldsymbol{x} | \boldsymbol{a}^\top \boldsymbol{x} = b \},\end{align*}$其中$\boldsymbol{a}$是一个$\mathbb{R}^n$中的非零向量，$b$是一个标量，显然超平面是凸的.
+下面介绍一些特殊的凸集.一个**超平面** (**hyperplane**)对应如下形式的线性方程，
+
+$$
+\begin{align*}
+\{ \boldsymbol{x} | \boldsymbol{a}^\top \boldsymbol{x} = b \}
+\end{align*}
+$$
+
+其中$\boldsymbol{a}$是一个$\mathbb{R}^n$中的非零向量，$b$是一个标量，显然超平面是凸的.
 
 5. 对于$\forall \boldsymbol{x}, \boldsymbol{y} \in invimg(C)$，易知存在$\boldsymbol{x}_1, \boldsymbol{y}_1 \in C$满足$\boldsymbol{A} \boldsymbol{x} = \boldsymbol{x}_1$和$\boldsymbol{A} \boldsymbol{y} = \boldsymbol{y}_1$，即$\boldsymbol{A}^{-1} \boldsymbol{x}_1 = \boldsymbol{x}$ 和$\boldsymbol{A}^{-1} \boldsymbol{y}_1 = \boldsymbol{y}$，于是对于$\forall \alpha \in [0, 1]$ 有
 
@@ -296,7 +304,21 @@ f(\boldsymbol{x}bar)
 \end{align*}
 $$
 
-于是存在序列$\{\boldsymbol{x}_k\}$的一个子序列$\{\boldsymbol{x}_k\}_\mathcal{K}$对于$\forall k \in \mathcal{K}$有$f(\boldsymbol{x}_k) \leq \gamma$，即$\{\boldsymbol{x}_k\}_\mathcal{K} \subseteq S_\gamma$，因为水平集$S_\gamma$是闭的，故$\boldsymbol{x}bar \in S_\gamma$，即$f(\boldsymbol{x}bar) \leq \gamma$，矛盾.
+于是存在序列
+$\{\boldsymbol{x}_k\}$
+的一个子序列
+$\{\boldsymbol{x}_k\}_\mathcal{K}$
+对于
+$\forall k \in \mathcal{K}$
+有
+$f(\boldsymbol{x}_k) \leq \gamma$
+，即
+$\{\boldsymbol{x}_k\}_\mathcal{K} \subseteq S_\gamma$
+，因为水平集$S_\gamma$是闭的，故
+$\boldsymbol{x}bar \in S_\gamma$
+，即
+$f(\boldsymbol{x}bar) \leq \gamma$
+，矛盾.
 
 2 $\Rightarrow$ 3：设$epi(f)$中的序列$\{ (\boldsymbol{x}_k, w_k) \}$收敛于$(\boldsymbol{x}bar, \bar{\boldsymbol{w}})$，由上境图的定义知$f(\boldsymbol{x}_k) \leq w_k$，取极限令$k \rightarrow \infty$并结合下半连续的定义知
 
