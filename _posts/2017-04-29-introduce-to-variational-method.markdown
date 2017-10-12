@@ -7,7 +7,7 @@ tags: [Mathematics]
 
 这是一篇转载的博文，原地址为：<del>[变分法简介](http://www.cnblogs.com/murongxixi/p/3995788.html)</del>
 
-原博客无法进入，备用链接：[变分法简介 - 慕容熙熙](https://www.tuicool.com/articles/E3eaqm)
+原博客无法进入，备用链接：[变分法简介](https://www.tuicool.com/articles/E3eaqm)
 
 ## 泛函的基本概念
 
