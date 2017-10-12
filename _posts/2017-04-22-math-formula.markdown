@@ -18,8 +18,8 @@ $$x_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 $$
  \begin{equation}\begin{split}
  \iint_{D}f(x,y)\mathrm{d}\sigma
- &= \int_{a}^{b}\mathrm{d}x\int_{\phi_{1}(x)}^{\phi_{2}(x)}f(x,y)\mathrm{d}y \\
- &= \int_{c}^{d}\mathrm{d}y\int_{\psi_{1}(y)}^{\psi_{2}(y)}f(x,y)\mathrm{d}x
+ &= \int_{a}^{b}\mathrm{d} x\int_{\phi_{1}(x)}^{\phi_{2}(x)}f(x,y)\mathrm{d}y \\
+ &= \int_{c}^{d}\mathrm{d}y\int_{\psi_{1}(y)}^{\psi_{2}(y)}f(x,y)\mathrm{d} x
  \end{split}\end{equation}
 $$
 
@@ -40,42 +40,42 @@ where $\vec 0$ denotes the zero vector.
 $$\sum_{n=1}^{\infty}\frac{1}{n}=\lim_{k\to\infty}\sum_{n=1}^{k}\frac{1}{n}$$
 
 ### 排列组合
-- 因子展开（factorial expression）
++ 因子展开（factorial expression）
 
 $$C(n,k)=\frac{n!}{k!(n-k)!}$$
 
-- 对称（symmetry）
++ 对称（symmetry）
 
 $$C(n,k)=C(n,n-k)$$
 
-- 吸收（absorption/ extraction）
++ 吸收（absorption/ extraction）
 
 $$C(r,k)=\frac{r}{k}C(r-1,k-1)$$
 
-- 增加（addition/ induction）
++ 增加（addition/ induction）
 
 $$C(r,k)=C(r-1,k)+C(r-1,k-1)$$
 
-- 上标（upper negation）
++ 上标（upper negation）
 
 $$C(r,k)=(-1)^kC(k-r-1,k)$$
 
-- 三项式（trinomial revision）
++ 三项式（trinomial revision）
 
 $$C(r,m)C(m,k)=C(r,k)C(r-k,m-k)$$
 
-- 二项式定理（binomial theorem）
++ 二项式定理（binomial theorem）
 
 $$\sum_k C(r,k) x^k y^{r-k}=(x+y)^r$$
 
-- 平行叠加（parallel summation）
++ 平行叠加（parallel summation）
 
 $$\sum_{k \leq n} C(r+k,k)=C(r+n+1,n)$$
 
-- 上叠加（upper summation）
++ 上叠加（upper summation）
 
 $$\sum_{0 \leq k \leq n} C(k,m)=C(n+1,m+1)$$
 
-- 范德蒙恒等式/ 范德蒙德卷积（Vandermonde's identity/ Vandermonde convolution）
++ 范德蒙恒等式/ 范德蒙德卷积（Vandermonde's identity/ Vandermonde convolution）
 
 $$\sum_k C(r,k)C(s,n-k)=C(r+s,n)$$
