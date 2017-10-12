@@ -271,7 +271,7 @@ $$\begin{align}
 \end{align}
 $$
 
-其中($$\ref{Euler-Lagrange}$)式交换了积分和求导的顺序(正确性稍后给出证明).于是
+其中($\ref{Euler-Lagrange}$)式交换了积分和求导的顺序(正确性稍后给出证明).于是
 
 $$
 \begin{align*}
