@@ -25,9 +25,13 @@ $$
 命题1.1.2 ：以下操作可以保持集合得凸性：
 
 1. 两个凸集$C_1$和$C_2$的交集$C_1 \cap C_2$是凸集.
+
 2. 两个凸集$C_1$和$C_2$中的元素的向量和$C_1 + C_2$组成的集合是凸集.
+
 3. 对于任意凸集$C$和标量$\lambda$，$\lambda C$是凸集.
+
 4. 凸集$C$的闭包$cl(C)$和内部$int(C)$都是凸集.
+
 5. 凸集$C$在仿射变换(affine transformation)下的象(img(C))和原象(invimg(C))都是凸集.
 
 证明 ：
@@ -65,7 +69,9 @@ $$
 
 3. 对于$\forall \boldsymbol{x}, \boldsymbol{y} \in cl(C)$，易知存在序列$\{ \boldsymbol{x}_k \}, \{ \boldsymbol{y}_k \} \in C$满足$\boldsymbol{x}_k \rightarrow \boldsymbol{x}$和$\boldsymbol{y}_k \rightarrow \boldsymbol{y}$.对于$\forall \alpha \in [0, 1]$，由$C$的凸性知序列$\{ \alpha \boldsymbol{x}_k + (1 - \alpha) \boldsymbol{y}_k \} \in C$，于是该序列的极限$\alpha \boldsymbol{x} + (1 - \alpha) \boldsymbol{y} \in cl(C)$. 
 
-4. 对于$\forall \boldsymbol{x}, \boldsymbol{y} \in int(C)$，易知存在以$\boldsymbol{x}, \boldsymbol{y}$为球心半径为$r$的开球$B(\boldsymbol{x}, r) \subseteq C$和$B(\boldsymbol{y}, r) \subseteq C$. 考虑开球$B(\alpha \boldsymbol{x} + (1 - \alpha) \boldsymbol{y}, r)$ 中的任意一点$\alpha \boldsymbol{x} + (1 - \alpha) \boldsymbol{y} + \boldsymbol{z}$，其中$||z|| < r$，易知有
+4. 对于$\forall \boldsymbol{x}, \boldsymbol{y} \in int(C)$，易知存在以$\boldsymbol{x}, \boldsymbol{y}$为球心半径为$r$的开球$B(\boldsymbol{x}, r) \subseteq C$和$B(\boldsymbol{y}, r) \subseteq C$. 考虑开球$B(\alpha \boldsymbol{x} + (1 - \alpha) \boldsymbol{y}, r)$ 中的任意一点$\alpha \boldsymbol{x} + (1 - \alpha) \boldsymbol{y} + \boldsymbol{z}$，其中
+$||z|| < r$
+，易知有
 
 $$
 \begin{align*}
@@ -166,7 +172,13 @@ $$
 $||\cdot||$
 ，因为三角不等式保证了它的凸性.
 
-对于任意函数$f: C \mapsto \mathbb{R}$和标量$\gamma$，集合$\{ \boldsymbol{x} \in C | f(\boldsymbol{x}) \leq \gamma \}$和$\{ \boldsymbol{x} \in C | f(\boldsymbol{x}) < \gamma \}$称为$f$的 水平集 (level sets)，也即作一个水平面与$f$相交，落在水平面下方的那部分对应的$\boldsymbol{x}$就组成了**水平集**.凸函数$f: C \mapsto \mathbb{R}$的所有水平集都是凸的.考虑水平集$S = \{ \boldsymbol{x} \in C | f(\boldsymbol{x}) \leq \gamma \}$，对于$\forall \boldsymbol{x}, \boldsymbol{y} \in S$和$\forall \alpha \in [0, 1]$，由$S$的定义和$f$的凸性知
+对于任意函数$f: C \mapsto \mathbb{R}$和标量$\gamma$，集合
+$\{ \boldsymbol{x} \in C | f(\boldsymbol{x}) \leq \gamma \}$
+和
+$\{ \boldsymbol{x} \in C | f(\boldsymbol{x}) < \gamma \}$
+称为$f$的 水平集 (level sets)，也即作一个水平面与$f$相交，落在水平面下方的那部分对应的$\boldsymbol{x}$就组成了**水平集**.凸函数$f: C \mapsto \mathbb{R}$的所有水平集都是凸的.考虑水平集
+$S = \{ \boldsymbol{x} \in C | f(\boldsymbol{x}) \leq \gamma \}$
+，对于$\forall \boldsymbol{x}, \boldsymbol{y} \in S$和$\forall \alpha \in [0, 1]$，由$S$的定义和$f$的凸性知
 
 $$
 \begin{align*}
@@ -175,7 +187,11 @@ f(\alpha \boldsymbol{x} + (1 - \alpha) \boldsymbol{y}) \leq \alpha f(\boldsymbol
 \end{align*}
 $$
 
-类似可证$\{ \boldsymbol{x} \in C | f(\boldsymbol{x}) < \gamma \}$也是凸的.但是倒过来是**不成立**的，例如函数$f(\boldsymbol{x}) = \sqrt{|\boldsymbol{x}|}$ 的水平集是凸的，但是该函数不是凸的.
+类似可证
+$\{ \boldsymbol{x} \in C | f(\boldsymbol{x}) < \gamma \}$
+也是凸的.但是倒过来是**不成立**的，例如函数
+$f(\boldsymbol{x}) = \sqrt{|\boldsymbol{x}|}$
+的水平集是凸的，但是该函数不是凸的.
 
 ![C1S1 Pic3][C1S1-pic3]
 
@@ -252,9 +268,14 @@ $$
 
 命题1.1.6 ：对于函数$f: \mathbb{R}^n \mapsto [-\infty, \infty]$，如下3个条件是等价的：
 
-1. 对于任意标量$\gamma$，水平集$S_\gamma = \{ \boldsymbol{x} | f(\boldsymbol{x}) \leq \gamma \}$是闭的.
+1. 对于任意标量$\gamma$，水平集
+$S_\gamma = \{ \boldsymbol{x} | f(\boldsymbol{x}) \leq \gamma \}$
+是闭的.
+
 2. $f$下半连续.
+
 3. $epi(f)$是闭的.
+
 证明 ：如果$f$恒取值$\infty$，那么结论显然成立.不失一般性，设至少存在一个$\boldsymbol{x} \in \mathbb{R}^n$使得$f(\boldsymbol{x}) < \infty$，即$epi(f)$ 非空，至少存在一个水平集非空.
 
 1 $\Rightarrow$ 2：反证法，假设存在收敛于$\boldsymbol{x}bar$的序列$\{\boldsymbol{x}_k\}$满足
@@ -373,7 +394,9 @@ $$
 下面主要讨论保持函数凸性的操作，这样可以从几个已知凸性的简单函数出发，构造出复杂的凸函数，主要讨论一下3种操作：
 
 1. 线性变换的复合.
+
 2. 相加及非负标量乘.
+
 3. 逐点取上确界.
 
 命题1.1.8 ：给定函数$f: \mathbb{R}^m \mapsto (-\infty, \infty]$，矩阵$\boldsymbol{A} \in \mathbb{R}^{m \times n}$，函数$F: \mathbb{R}^n \mapsto (-\infty, \infty]$定义如下：
@@ -570,7 +593,9 @@ $$
 命题1.1.12 [二阶性质]：凸集$C$是$\mathbb{R}^n$的非空子集，函数$f: C \rightarrow \mathbb{R}$二阶可微，那么
 
 1.若对于$\forall \boldsymbol{x} \in C$有$\nabla^2 f(\boldsymbol{x})$半正定，则$f$是凸函数.
+
 2.若$f$是凸函数，$C$是开集，则对于$\forall \boldsymbol{x} \in C$有$\nabla^2 f(\boldsymbol{x})$半正定.
+
 证明 ：
 
 1.由Taylor展式知，对于$\forall \boldsymbol{x}, \boldsymbol{z} \in C$，存在$\alpha \in [0, 1]$满足
