@@ -269,7 +269,7 @@ $$\begin{align}
 \end{align}
 $$
 
-其中(\ref{Euler-Lagrange})式交换了积分和求导的顺序(正确性稍后给出证明).于是
+其中($$\ref{Euler-Lagrange}$)式交换了积分和求导的顺序(正确性稍后给出证明).于是
 
 $$
 \begin{align*}
@@ -290,7 +290,7 @@ $$
 这就是Euler-Lagrange方程.
 
 
-(\ref{Euler-Lagrange})式中第三个等号可以交换积分和求导的顺序是因为
+($\ref{Euler-Lagrange}$)式中第三个等号可以交换积分和求导的顺序是因为
 
 $$
 \begin{align*}
@@ -456,11 +456,11 @@ $$\begin{align*} F_p & = \ln p(x) + 1 - \lambda_1 - \lambda_2 x - \lambda_3 (x -
 
 $$\begin{align} \label{Gauss 4} p(x) = \mathrm{exp} (- 1 + \lambda_1 + \lambda_2 x + \lambda_3 (x - \mu)^2) \end{align}$$
 
-将(\ref{Gauss 4})回代入(\ref{Gauss 1})、(\ref{Gauss 2})、(\ref{Gauss 3})并令$y = x - \mu$可得
+将($\ref{Gauss 4}$)回代入($\ref{Gauss 1}$)、($\ref{Gauss 2}$)、($\ref{Gauss 3}$)并令$y = x - \mu$可得
 
 $$\begin{align} \label{Gauss 5} \int_{-\infty}^\infty \mathrm{exp} (- 1 + \lambda_1 + \lambda_2 (y + \mu) + \lambda_3 y^2) \mathrm{d}y & = 1 \\ \label{Gauss 6} \int_{-\infty}^\infty (y + \mu) \mathrm{exp} (- 1 + \lambda_1 + \lambda_2 (y + \mu) + \lambda_3 y^2) \mathrm{d}y & = \mu \\ \label{Gauss 7} \int_{-\infty}^\infty y^2 \mathrm{exp} (- 1 + \lambda_1 + \lambda_2 (y + \mu) + \lambda_3 y^2) \mathrm{d}y & = \sigma^2 \end{align}$$
 
-(\ref{Gauss 6}) - $\mu$(\ref{Gauss 5})可得
+($\ref{Gauss 6}$) - $\mu$($\ref{Gauss 5}$)可得
 
 $$
 \begin{align}
@@ -469,7 +469,7 @@ $$
 \end{align}
 $$
 
-将其中的非零常数项$\mathrm{exp} (- 1 + \lambda_1 + \lambda_2 \mu)$丢掉，然后$2 \lambda_3$(\ref{Gauss 7})$+ \lambda_2$(\ref{Gauss 5})可得
+将其中的非零常数项$\mathrm{exp} (- 1 + \lambda_1 + \lambda_2 \mu)$丢掉，然后$2 \lambda_3$($\ref{Gauss 7}$)$+ \lambda_2$($\ref{Gauss 5}$)可得
 
 $$
 \begin{align*}
@@ -497,7 +497,7 @@ $$
 \end{align*}
 $$
 
-故$\lambda_3 < 0$.此时，由(\ref{Gauss 5})可知
+故$\lambda_3 < 0$.此时，由($\ref{Gauss 5}$)可知
 
 $$
 \begin{align*}
@@ -518,7 +518,7 @@ $$
 \end{align}
 $$
 
-由(\ref{Gauss 7})可知
+由($\ref{Gauss 7}$)可知
 
 $$\begin{align*}
 \sigma^2 
@@ -540,7 +540,7 @@ $$
 \end{align}
 $$
 
-将(\ref{Gauss 8})和(\ref{Gauss 9})代入(\ref{Gauss 4})可得
+将($\ref{Gauss 8}$)和($\ref{Gauss 9}$)代入($\ref{Gauss 4}$)可得
 
 $$
 \begin{align*}
