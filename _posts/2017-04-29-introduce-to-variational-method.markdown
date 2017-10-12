@@ -137,9 +137,11 @@ $$
 
 在推导Euler-Lagrange方程前，我们需要如下的预备定理.
 
-若函数$y=f(x)$在$[a,b]$上连续且$\int_a^b f(x)\eta(x)=0$，其中$\eta(x)$在$[a,b]$上有连续导数，$\eta(a)=\eta(b)=0$且$|\eta(x)|<\epsilon$（$\epsilon \in \mathbb{R^+}$），那么函数$f(x)$在$[a,b]$上恒等于$0$.
+若函数$y=f(x)$在$[a,b]$上连续且$\int_a^b f(x)\eta(x) = 0$，其中$\eta(x)$在$[a,b]$上有连续导数，$\eta(a) = \eta(b)=0$且
+$\left| \eta(x) \right| < \epsilon$
+（$\epsilon \in \mathbb{R^+}$），那么函数$f(x)$在$[a,b]$上恒等于$0$.
 
-证明：用反证法，假设存在$x_0 \in (a,b)$使得$f(x_0)>0$，由$f(x)$的连续性知存在正数$\delta$使得当$|x-x_0| < \delta$时有$f(x)>0$. 现作函数
+证明：用反证法，假设存在$x_0 \in (a,b)$使得$f(x_0)>0$，由$f(x)$的连续性知存在正数$\delta$使得当$\left| x-x_0 \right| < \delta$时有$f(x)>0$. 现作函数
 
 $$
 \begin{align*} 
@@ -152,7 +154,8 @@ $$
 \end{align*}
 $$
 
-显然$\psi(a) = \psi(b) = 0$，此外$\psi(x)$在$[a,b]$上有连续导数(这里先做假设，稍后给出证明)，又选取合适的$A$可使得$\eta(x) = A \psi(x)$满足$|\eta(x)| < \epsilon$，故这样的$\eta(x)$满足所有条件，于是
+显然$\psi(a) = \psi(b) = 0$，此外$\psi(x)$在$[a,b]$上有连续导数(这里先做假设，稍后给出证明)，又选取合适的$A$可使得$\eta(x) = A \psi(x)$满足$\left|
+\eta(x) \right| < \epsilon$，故这样的$\eta(x)$满足所有条件，于是
 
 $$
 \begin{align*}
