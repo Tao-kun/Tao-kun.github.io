@@ -817,7 +817,8 @@ $$
 \begin{align*}
 \tilde{{\boldsymbol{\alpha}}}_k = \begin{bmatrix} \alpha_{k,1} \\
 \vdots \\
-\alpha_{k,n+1} \end{bmatrix} \in \mathbb{R}^{n+1}, \tilde{\boldsymbol{x}}_k = \begin{bmatrix} \boldsymbol{x}_{k,1} \\
+\alpha_{k,n+1} \end{bmatrix} \in \mathbb{R}^{n+1},
+\tilde{\boldsymbol{x}}_k = \begin{bmatrix} \boldsymbol{x}_{k,1} \\
 \vdots \\
 \boldsymbol{x}_{k,n+1} \end{bmatrix} \in \mathbb{R}^{(n+1)n}
 \end{align*}
@@ -829,7 +830,8 @@ $$
 \begin{align*}
 \tilde{{\boldsymbol{\alpha}}}_\infty = \begin{bmatrix} \alpha_{\infty,1} \\
 \vdots \\
-\alpha_{\infty,n+1} \end{bmatrix} \in \mathbb{R}^{n+1}, \tilde{\boldsymbol{x}}_\infty = \begin{bmatrix} \boldsymbol{x}_{\infty,1} \\
+\alpha_{\infty,n+1} \end{bmatrix} \in \mathbb{R}^{n+1},
+\tilde{\boldsymbol{x}}_\infty = \begin{bmatrix} \boldsymbol{x}_{\infty,1} \\
 \vdots \\
 \boldsymbol{x}_{\infty,n+1} \end{bmatrix} \in \mathbb{R}^{(n+1)n}
 \end{align*}
