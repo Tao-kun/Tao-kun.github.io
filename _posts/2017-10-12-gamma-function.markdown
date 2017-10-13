@@ -51,13 +51,13 @@ $$
 
 $$
 \begin{align*}
-\left[ \left( \frac{2}{1} \right)^n \frac{1}{n+1} \right]
+& \left[ \left( \frac{2}{1} \right)^n \frac{1}{n+1} \right]
 \left[ \left( \frac{3}{2} \right)^n \frac{2}{n+2} \right]
-\left[ \left( \frac{4}{3} \right)^n \frac{3}{n+3} \right] \cdots 
-& = \lim_{m \rightarrow \infty} \frac{1 \cdot 2 \cdots m}{(n+1)(n+2)\cdots(n+m)} (m+1)^n \\  
-& = \lim_{m \rightarrow \infty} 1 \cdot 2 \cdots n \frac{(n+1)(n+2)\cdots m}{(n+1)(n+2)\cdots m} \frac{(m+1)^n}{(m+1)(m+2)\cdots(m+n)} \\  
-& = n! \lim_{m \rightarrow \infty} \frac{(m+1)^n}{(m+1)(m+2)\cdots(m+n)} \\ 
-& = n!
+\left[ \left( \frac{4}{3} \right)^n \frac{3}{n+3} \right] \cdots \\
+= &\lim_{m \rightarrow \infty} \frac{1 \cdot 2 \cdots m}{(n+1)(n+2)\cdots(n+m)} (m+1)^n \\  
+= & \lim_{m \rightarrow \infty} 1 \cdot 2 \cdots n \frac{(n+1)(n+2)\cdots m}{(n+1)(n+2)\cdots m} \frac{(m+1)^n}{(m+1)(m+2)\cdots(m+n)} \\  
+= & n! \lim_{m \rightarrow \infty} \frac{(m+1)^n}{(m+1)(m+2)\cdots(m+n)} \\ 
+= & n!
 \end{align*}
 $$
 
