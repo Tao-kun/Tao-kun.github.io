@@ -557,7 +557,7 @@ $$
 
 如果$f_i, i \in I$是凸的，则$F$是凸的；如果$f_i, i \in I$是闭的，则$F$是闭的.
 
-证明：点$(\boldsymbol{x}, w) \in epi(F)$当且仅当$F(\boldsymbol{x}) \leq w$，即当且仅当$f_i(\boldsymbol{x}) \leq w, i \in I$，即$(\boldsymbol{x}, w) \in \cap_{i \in I} epi(f_i)$，即
+**证明**：点$(\boldsymbol{x}, w) \in epi(F)$当且仅当$F(\boldsymbol{x}) \leq w$，即当且仅当$f_i(\boldsymbol{x}) \leq w, i \in I$，即$(\boldsymbol{x}, w) \in \cap_{i \in I} epi(f_i)$，即
 
 $$
 \begin{align*}
@@ -720,12 +720,13 @@ $$
 
 **命题1.2.1**：$X$是非空集合，那么
 
-1.$X$，$conv(X)$和$cl(X)$有相同的仿射包.
-2.$cone(X) = cone(conv(X))$.
-3.$aff(conv(X)) \subseteq aff(cone(X))$.
+1. $X$，$conv(X)$和$cl(X)$有相同的仿射包.
+2. $cone(X) = cone(conv(X))$.
+3. $aff(conv(X)) \subseteq aff(cone(X))$.
 4. 如果$\boldsymbol{0} \in conv(X)$，那么$aff(conv(X)) = aff(cone(X))$.
 
 **证明**：
+
 1.先证$X$和$cl(X)$有相同的仿射包.一方面，由$X \subseteq cl(X)$易知有$aff(X) \subseteq aff(cl(X))$.另一方面，$X \subseteq aff(X)$，而$aff(X)$是闭集，由闭包的定义知$cl(X) \subseteq aff(X)$，故$aff(cl(X)) \subseteq aff(X)$. 再证$X$和$conv(X)$有相同的仿射包，不妨设$\boldsymbol{0} \in X$，否则可以将$X$平移使其包含$\boldsymbol{0}$，这不影响结论.于是$aff(X)$和$aff(conv(X))$都是子空间.一方面，由$X \subseteq conv(X)$易知有$aff(X) \subseteq aff(conv(X))$.另一方面，设$aff(conv(X))$的维度为$m$，易知存在$\boldsymbol{x}_1, \dots, \boldsymbol{x}_m \in conv(X)$张成了$aff(conv(X))$，于是$\forall \boldsymbol{x} \in aff(conv(X))$都可以写成$\boldsymbol{x}_1, \dots, \boldsymbol{x}_m$的线性组合，由凸包的定义知$\boldsymbol{x}_i, 1 \leq i \leq m$都是$X$中元素的凸组合，故$\boldsymbol{x}$也是$X$中元素的线性组合，所以$\boldsymbol{x} \in aff(X)$，于是$aff(conv(X)) \subseteq aff(X)$.
 
 2.因为$X \subseteq conv(X)$，故$cone(X) \subseteq cone(conv(X))$；对于$\forall \boldsymbol{x} \in cone(conv(X))$，由锥的定义知$\boldsymbol{x}$是$conv(X)$中元素的非负组合，又$conv(X)$中元素是$X$中元素的凸组合，故$\boldsymbol{x}$是$X$中元素的非负组合，所以，$\boldsymbol{x} \in cone(X)$，于是$cone(conv(X)) \subseteq cone(X)$.
@@ -735,7 +736,7 @@ $$
 
 $$
 \begin{align*}
-aff(conv(X)) & = \{(1, 1)\}, \\
+aff(conv(X)) & = \{(1, 1)\} \\
 aff(cone(X)) & = \{(x_1, x_2) \vert x_1 = x_2 \}
 \end{align*}
 $$
@@ -746,9 +747,10 @@ $$
 
 **命题1.2.2** [**Caratheodory's定理**]：集合$X$是$\mathbb{R}^n$的非空子集，则
 
-1.$cone(X)$中的任意非零向量可表示为$X$中的线性无关的向量的正组合.
-2.$conv(X)$中的任意向量可表示为$X$中不超过$n + 1$个向量的凸组合，$n$是$X$的仿射包的维度.
-证明：
+1. $cone(X)$中的任意非零向量可表示为$X$中的线性无关的向量的正组合.
+2. $conv(X)$中的任意向量可表示为$X$中不超过$n + 1$个向量的凸组合，$n$是$X$的仿射包的维度.
+
+**证明**：
 
 1. 设向量$\boldsymbol{x} \neq \boldsymbol{0} \in cone(X)$，设$m$是最小的使得$\boldsymbol{x}$满足如下形式
 
@@ -805,9 +807,7 @@ Caratheodory's定理是一个很重要的定理，可以此推出一些其它的
 
 $$
 \begin{align*}
-\boldsymbol{x}_k = \alpha_{k,1} \boldsymbol{x}_{k,1} + \dots + \alpha_{k,n+1} \boldsymbol{x}_{k,n+1},
-\sum_{i=1}^{n+1} \alpha_{k,i} = 1,
-\alpha_{k,i} \geq 0, i = 1, \dots, n+1
+\boldsymbol{x}_k = \alpha_{k,1} \boldsymbol{x}_{k,1} + \dots + \alpha_{k,n+1} \boldsymbol{x}_{k,n+1}, \sum_{i=1}^{n+1} \alpha_{k,i} = 1, \alpha_{k,i} \geq 0, i = 1, \dots, n+1
 \end{align*}
 $$
 
@@ -823,7 +823,7 @@ $$
 \end{align*}
 $$
 
-由于序列$\{ \tilde{{\boldsymbol{\alpha}}}_k^\top, \tilde{\boldsymbol{x}}_k^\top \}$有界，故必存在极限，设为$( \tilde{{\boldsymbol{\alpha}}}_\infty^\top, \tilde{\boldsymbol{x}}_\infty^\top )$，其中 
+由于序列 $\{\tilde{{\boldsymbol{\alpha}}}_k^\top, \tilde{\boldsymbol{x}}_k^\top\}$ 有界，故必存在极限，设为 $(\tilde{{\boldsymbol{\alpha}}}_\infty^\top, \tilde{\boldsymbol{x}}_\infty^\top)$ ，其中 
 
 $$
 \begin{align*}
@@ -835,7 +835,7 @@ $$
 \end{align*}
 $$
 
-显然有$\sum_{i=1}^{n+1} \alpha_{\infty,i} = 1, \alpha_{\infty,i} \geq 0, i = 1, \dots, n + 1$，由于$X$是闭集，故$\boldsymbol{x}_{\infty, i} \in X, i = 1, \dots, n + 1$，再由序列极限$\bar{\boldsymbol{x}}$可表示为$\bar{\boldsymbol{x}} = \alpha_{\infty,1} \boldsymbol{x}_{\infty,1} + \dots + \alpha_{\infty,n+1} \boldsymbol{x}_{\infty,n+1}$可知$\bar{\boldsymbol{x}} \in conv(X)$.
+显然有 $\sum_{i=1}^{n+1} \alpha_{\infty,i} = 1, \alpha_{\infty,i} \geq 0, i = 1, \dots, n + 1$ ，由于$X$是闭集，故 $\boldsymbol{x}_{\infty, i} \in X, i = 1, \dots, n + 1$ ，再由序列极限 $\bar{\boldsymbol{x}}$ 可表示为 $\bar{\boldsymbol{x}} = \alpha_{\infty,1} \boldsymbol{x}_{\infty,1} + \dots + \alpha_{\infty,n+1} \boldsymbol{x}_{\infty,n+1}$ 可知 $\bar{\boldsymbol{x}} \in conv(X)$ .
 
 $X$有界的假设是不可或缺的，否则序列$\{ \tilde{{\boldsymbol{\alpha}}}_k^\top, \tilde{\boldsymbol{x}}_k^\top \}$的极限不一定存在.一个反例，设 
 
@@ -1430,7 +1430,8 @@ $f(\boldsymbol{x}) \geq f^{**}(\boldsymbol{x}), \forall \boldsymbol{x} \in \math
 当$f$是凸函数时，$f$，$f^*$和$f^{**}$这三个函数中若有一个是正常函数，则其它两个也是正常函数.
 若$f$是正常闭凸函数，则$f(\boldsymbol{x}) = f^{**}(\boldsymbol{x}), \forall \boldsymbol{x} \in \mathbb{R}^n$.
 $f$的共轭函数与其闭凸包的共轭函数等价，若$cl(conv(f))$是正常函数，则$cl(conv(f))(\boldsymbol{x}) = f^{**}(\boldsymbol{x}), \forall \boldsymbol{x} \in \mathbb{R}^n$.
-证明：
+
+**证明**：
 
 由共轭函数的定义易知有$$\begin{align*} f^*(\boldsymbol{y}) \geq \boldsymbol{x}^\top \boldsymbol{y} - f(\boldsymbol{x}), \end{align*}$$即$$\begin{align*} f(\boldsymbol{x}) \geq \boldsymbol{x}^\top \boldsymbol{y} - f^*(\boldsymbol{y}), \forall \boldsymbol{x}, \boldsymbol{y} \in \mathbb{R}^n. \end{align*}$$因此$$\begin{align*} f(\boldsymbol{x}) \geq \sup_{\boldsymbol{y} \in \mathbb{R}^n} \{ \boldsymbol{x}^\top \boldsymbol{y} - f^*(\boldsymbol{y}) \} = f^{**}(\boldsymbol{x}), \forall \boldsymbol{x} \in \mathbb{R}^n. \end{align*}$$
 假设$f$是正常凸函数，则其上境图$epi(f)$是非空凸集且不包含垂直直线，由命题1.5.9(a)知$epi(f)$属于某个非垂直超平面对应的闭半空间，事实上，$epi(f)$只可能属于正闭半空间，即存在向量$\boldsymbol{y} \neq \boldsymbol{0}$和标量$c$满足$$\begin{align*} \boldsymbol{y}^\top \boldsymbol{x} + f(\boldsymbol{x}) \geq c, \forall \boldsymbol{x} \in \mathbb{R}^n. \end{align*}$$因此可得$$\begin{align*} f^*(- \boldsymbol{y}) = \sup_{\boldsymbol{x} \in \mathbb{R}^n} \{ - \boldsymbol{y}^\top \boldsymbol{x} - f(\boldsymbol{x}) \} \leq -c, \end{align*}$$故$f^*$不是恒取$\infty$.又$f$是正常函数，故存在$\bar{\boldsymbol{x}}$使得$f(\bar{\boldsymbol{x}})$为有限值，由于$$\begin{align*} f^*(\boldsymbol{y}) \geq \bar{\boldsymbol{x}}^\top \boldsymbol{y} - f(\bar{\boldsymbol{x}}), \forall \boldsymbol{y} \in \mathbb{R}^n, \end{align*}$$故对于$\forall \boldsymbol{y} \in \mathbb{R}^n$有$f^*(\boldsymbol{y}) > - \infty$，故$f^*$是正常函数. 
