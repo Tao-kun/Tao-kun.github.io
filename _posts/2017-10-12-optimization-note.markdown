@@ -276,9 +276,7 @@ $$
 **命题1.1.6**：对于函数$f: \mathbb{R}^n \mapsto [-\infty, \infty]$，如下3个条件是等价的：
 
 1. 对于任意标量$\gamma$，水平集$S_\gamma = \{ \boldsymbol{x} \vert f(\boldsymbol{x}) \leq \gamma \}$是闭的.
-
 2.$f$下半连续.
-
 3.$epi(f)$是闭的.
 
 **证明**：如果$f$恒取值$\infty$，那么结论显然成立.不失一般性，设至少存在一个$\boldsymbol{x} \in \mathbb{R}^n$使得$f(\boldsymbol{x}) < \infty$，即$epi(f)$非空，至少存在一个水平集非空.
@@ -519,7 +517,7 @@ $$
 
 对于一阶和二阶可微凸函数，有一些额外的解析性质，还可以以此判别凸性.
 
-命题1.1.11 [一阶性质]：凸集$C$是$\mathbb{R}^n$的非空子集，函数$f: C \rightarrow \mathbb{R}$一阶可微，那么$f$是凸函数当且仅当对于$\forall \boldsymbol{x}, \boldsymbol{z} \in C$有
+**命题1.1.11** [**一阶性质**]：凸集$C$是$\mathbb{R}^n$的非空子集，函数$f: C \rightarrow \mathbb{R}$一阶可微，那么$f$是凸函数当且仅当对于$\forall \boldsymbol{x}, \boldsymbol{z} \in C$有
 
 $$
 \begin{align}
@@ -597,7 +595,7 @@ $$
 
 该命题的一个直接推论是若$f$是凸函数且对于$\forall \boldsymbol{z} \in C$有$\nabla f(\boldsymbol{x}^*)^\top (\boldsymbol{z} - \boldsymbol{x}^*) \geq 0$成立，则$\boldsymbol{x}^*$是$f$的最小值点.进一步，若$\boldsymbol{x}^* \in int(C)$，则$\boldsymbol{x}^*$是$f$的最小值点的充要条件是$\nabla f(\boldsymbol{x}^*) = \boldsymbol{0}$.
 
-命题1.1.12 [二阶性质]：凸集$C$是$\mathbb{R}^n$的非空子集，函数$f: C \rightarrow \mathbb{R}$二阶可微，那么
+**命题1.1.12** [**二阶性质**]：凸集$C$是$\mathbb{R}^n$的非空子集，函数$f: C \rightarrow \mathbb{R}$二阶可微，那么
 
 1.若对于$\forall \boldsymbol{x} \in C$有$\nabla^2 f(\boldsymbol{x})$半正定，则$f$是凸函数.
 
