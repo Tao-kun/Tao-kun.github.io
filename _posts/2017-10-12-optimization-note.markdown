@@ -1211,7 +1211,7 @@ $C \cap L_C^\perp$，这个集合不包含直线.否则设直线$\{\boldsymbol{x
 
 **定义1.4.14**：设$\{C_k\}$是非空嵌套闭凸集序列，渐进序列$\{\boldsymbol{x}_k\}$和公共回收方向$\boldsymbol{d}$同定义1.4.13，若存在下标$\bar{k}$使得$$\begin{align*}\boldsymbol{x}_k - \boldsymbol{d} \in C_k, \ \forall k \geq \bar{k},\end{align*}$$则称渐进序列$\{\boldsymbol{x}_k\}$是 回缩 (retractive)的.若$\{C_k\}$的所有渐进序列都是回缩的，则称$\{C_k\}$是回缩的.特别地，若所有的$C_k$都是相同的，即$C_k \equiv C$，则称$C$是回缩的.
 
-回缩集合序列的任一渐进序列，沿其对应的公共回收方向$\boldsymbol{d}$反向平移后，都存在充分大的$\bar{k}$，使得$\boldsymbol{x}_k \in C_k, k \geq \bar{k}$.例如设$C_k = \{ (x_1, x_2) \ \vert \ \vertx_1\vert \leq 1/k \}$，则其渐进序列是回缩的：若$\boldsymbol{x}_{k,1} \rightarrow 0$，$\boldsymbol{x}_{k,2} \rightarrow \infty$，则对应$\boldsymbol{d} = (0, 1)$；若$\boldsymbol{x}_{k,1} \rightarrow 0$，$\boldsymbol{x}_{k,2} \rightarrow -\infty$，则对应$\boldsymbol{d} = (0, -1)$.
+回缩集合序列的任一渐进序列，沿其对应的公共回收方向$\boldsymbol{d}$反向平移后，都存在充分大的$\bar{k}$，使得$\boldsymbol{x}_k \in C_k, k \geq \bar{k}$.例如设$C_k = \{ (x_1, x_2) \ \vert \ \vert x_1\vert \leq 1/k \}$，则其渐进序列是回缩的：若$\boldsymbol{x}_{k,1} \rightarrow 0$，$\boldsymbol{x}_{k,2} \rightarrow \infty$，则对应$\boldsymbol{d} = (0, 1)$；若$\boldsymbol{x}_{k,1} \rightarrow 0$，$\boldsymbol{x}_{k,2} \rightarrow -\infty$，则对应$\boldsymbol{d} = (0, -1)$.
 
 **命题1.4.15**：设$\{C_{1,k}\}, \dots, \{C_{r,k}\}$是$r$个回缩集合序列，令$N_k = C_{1,k} \cap \dots \cap C_{r,k}$，$T_k = C_{1,k} \times \dots \times C_{r,k}$，则$\{N_k\}$和$\{T_k\}$是回缩集合序列.
 
@@ -1424,7 +1424,7 @@ $$\begin{align}
 **例1.6.1**：下面来看几个简单例子，如右图所示
 
 $f(x) = \alpha x - \beta$，则$$\begin{align*} f^*(y) = \sup_{x \in \mathbb{R}} \{ yx - \alpha x + \beta \} = \sup_{x \in \mathbb{R}} \{ (y - \alpha) x \} + \beta = \begin{cases} \beta, & y = \alpha; \\ \infty, & y \neq \alpha.\end{cases} \end{align*}$$且$$\begin{align*} f^{**}(x) = \sup_{y \in \mathbb{R}} \{ xy - f^*(y) \} = x \alpha - f^*(\alpha) = \alpha x - \beta = f(x). \end{align*}$$
-$f(x) = \vertx\vert$，则$$\begin{align*} f^*(y)  = \sup_{x \in \mathbb{R}} \{ yx - \vertx\vert \} = \begin{cases} \sup_{x \geq 0} (y - 1)x \\ \sup_{x \leq 0} (y + 1)x \end{cases} = \begin{cases} 0, & \verty\vert \leq 1; \\ \infty, & \verty\vert > 1. \end{cases} \end{align*}$$且$$\begin{align*} f^{**}(x) = \sup_{y \in \mathbb{R}} \{ xy - f^*(y) \} = \sup_{\verty\vert \leq 1} \{ xy - 0 \} = \vertx\vert = f(x). \end{align*}$$
+$f(x) = \vert x\vert$，则$$\begin{align*} f^*(y)  = \sup_{x \in \mathbb{R}} \{ yx - \vert x\vert \} = \begin{cases} \sup_{x \geq 0} (y - 1)x \\ \sup_{x \leq 0} (y + 1)x \end{cases} = \begin{cases} 0, & \vert y\vert \leq 1; \\ \infty, & \vert y\vert > 1. \end{cases} \end{align*}$$且$$\begin{align*} f^{**}(x) = \sup_{y \in \mathbb{R}} \{ xy - f^*(y) \} = \sup_{\vert y\vert \leq 1} \{ xy - 0 \} = \vert x\vert = f(x). \end{align*}$$
 $f(x) = \frac{c}{2}x^2$，则$$\begin{align*} f^*(y) = \sup_{x \in \mathbb{R}} \{ yx - \frac{c}{2}x^2 \} = y \frac{y}{c} - \frac{c}{2} \frac{y}{c} \frac{y}{c} = \frac{y^2}{c} - \frac{y^2}{2c} = \frac{y^2}{2c}. \end{align*}$$且$$\begin{align*} f^{**}(x) = \sup_{y \in \mathbb{R}} \{ xy - f^*(y) \} = \sup_{y \in \mathbb{R}} \{ xy - \frac{y^2}{2c} \} = x (cx) - \frac{(cx)^2}{2c} = \frac{c}{2}x^2 = f(x). \end{align*}$$
 命题1.6.2[共轭定理]：扩展实值函数$f: \mathbb{R}^n \mapsto [-\infty, \infty]$的共轭函数和二次共轭函数分别是$f^*$和$f^{**}$，那么
 
