@@ -294,7 +294,7 @@ $S_\gamma = \{ \boldsymbol{x} | f(\boldsymbol{x}) \leq \gamma \}$
 
 **证明**：如果$f$恒取值$\infty$，那么结论显然成立.不失一般性，设至少存在一个$\boldsymbol{x} \in \mathbb{R}^n$使得$f(\boldsymbol{x}) < \infty$，即$epi(f)$ 非空，至少存在一个水平集非空.
 
-1 $\Rightarrow$ 2：反证法，假设存在收敛于$\boldsymbol{x}bar$的序列$\{\boldsymbol{x}_k\}$满足
+1 \(\Rightarrow\) 2：反证法，假设存在收敛于\(\boldsymbol{x}bar\)的序列\(\{\boldsymbol{x}_k\}\)满足
 
 $$
 \begin{align*}
@@ -302,17 +302,17 @@ f(\boldsymbol{x}bar) > \liminf_{k \rightarrow \infty} f(\boldsymbol{x}_k)
 \end{align*}
 $$
 
-那么选取$\gamma$使得
+那么选取\(\gamma\)使得
 
 $$
 \begin{align*}
-f(\boldsymbol{x}bar)> \gamma > \liminf_{k \rightarrow \infty}f(\boldsymbol{x}_k)
+f(\boldsymbol{x}bar) > \gamma > \liminf_{k \rightarrow \infty} f(\boldsymbol{x}_k)
 \end{align*}
 $$
 
-于是存在序列$\{\boldsymbol{x}_k\}$的一个子序列$\{\boldsymbol{x}_k\}_\mathcal{K}$对于$\forall k \in \mathcal{K}$有$f(\boldsymbol{x}_k) \leq \gamma$，即$\{\boldsymbol{x}_k\}_\mathcal{K} \subseteq S_\gamma$，因为水平集$S_\gamma$是闭的，故$\boldsymbol{x}bar \in S_\gamma$，即$f(\boldsymbol{x}bar) \leq \gamma$，矛盾.
+于是存在序列\(\{\boldsymbol{x}_k\}\)的一个子序列\(\{\boldsymbol{x}_k\}_\mathcal{K}\)对于\(\forall k \in \mathcal{K}\)有\(f(\boldsymbol{x}_k) \leq \gamma\)，即\(\{\boldsymbol{x}_k\}_\mathcal{K} \subseteq S_\gamma\)，因为水平集\(S_\gamma\)是闭的，故\(\boldsymbol{x}bar \in S_\gamma\)，即\(f(\boldsymbol{x}bar) \leq \gamma\)，矛盾。
 
-2 $\Rightarrow$ 3：设$epi(f)$中的序列$\{ (\boldsymbol{x}_k, w_k) \}$收敛于$(\boldsymbol{x}bar, \bar{\boldsymbol{w}})$，由上境图的定义知$f(\boldsymbol{x}_k) \leq w_k$，取极限令$k \rightarrow \infty$并结合下半连续的定义知
+2\(\Rightarrow\)3：设\(epi(f)\)中的序列\(\{ (\boldsymbol{x}_k, w_k) \}\)收敛于\((\boldsymbol{x}bar, \bar{\boldsymbol{w}})\)，由上境图的定义知\(f(\boldsymbol{x}_k) \leq w_k\)，取极限令\(k \rightarrow \infty\)并结合下半连续的定义知
 
 $$
 \begin{align*}
@@ -323,15 +323,15 @@ f(\boldsymbol{x}bar)
 \end{align*}
 $$
 
-因此，$(\boldsymbol{x}bar, \bar{\boldsymbol{w}}) \in epi(f)$，故$epi(f)$是闭的.
+因此，\((\boldsymbol{x}bar, \bar{\boldsymbol{w}}) \in epi(f)\)，故\(epi(f)\)是闭的。
 
-3 $\Rightarrow$ 1：设水平集$S_\gamma$中的序列$\{\boldsymbol{x}_k\}$收敛于$\boldsymbol{x}bar$，于是对于$\forall k$ 有$(\boldsymbol{x}_k, \gamma) \in epi(f)$，因为$epi(f)$是闭的，故序列$\{(\boldsymbol{x}_k, \gamma)\}$的极限$(\boldsymbol{x}bar, \gamma) \in epi(f)$，即$\boldsymbol{x}bar \in S_\gamma$，故$S_\gamma$是闭的.
+3\(\Rightarrow\)1：设水平集\(S_\gamma\)中的序列\(\{\boldsymbol{x}_k\}\)收敛于\(\boldsymbol{x}bar\)，于是对于\(\forall k\) 有\((\boldsymbol{x}_k, \gamma) \in epi(f)\)，因为\(epi(f)\)是闭的，故序列\(\{(\boldsymbol{x}_k, \gamma)\}\)的极限\((\boldsymbol{x}bar, \gamma) \in epi(f)\)，即\(\boldsymbol{x}bar \in S_\gamma\)，故\(S_\gamma\)是闭的。
 
-一般来说，闭性比下半连续更方便使用，因为下半连续是一个定义域有关的性质，例如函数$f: \mathbb{R}^n \mapsto (-\infty, \infty]$：
+一般来说，闭性比下半连续更方便使用，因为下半连续是一个定义域有关的性质，例如函数\(f: \mathbb{R}^n \mapsto (-\infty, \infty]\)：
 
 $$
 \begin{align*}
-f(x) = 
+f(x) =
 \begin{cases}
 0 & x \in (0, 1)  \\
 \infty & x \not \in (0, 1)
@@ -339,7 +339,7 @@ f(x) =
 \end{align*}
 $$
 
-既不是闭的，也不是下半连续的，但是当限制定义域在$(0, 1)$上时，$f$就是下半连续的了.
+既不是闭的，也不是下半连续的，但是当限制定义域在\((0, 1)\)上时，\(f\)就是下半连续的了。
 
 **命题1.1.7**：对于函数$f: X \mapsto [-\infty, \infty]$，如果$dom(f)$是闭的且$f$对于$\forall \boldsymbol{x} \in dom(f)$均下半连续，则$f$是闭的.
 
