@@ -1481,38 +1481,38 @@ $f$的共轭函数与其闭凸包的共轭函数等价，若$cl(conv(f))$是正�
 
 
 
-[C1S1-pic1]: {{"/assets/images/C1S1-pic1.png" \vert site.baseurl }}
-[C1S1-pic2]: {{"/assets/images/C1S1-pic2.png" \vert site.baseurl }}
-[C1S1-pic3]: {{"/assets/images/C1S1-pic3.png" \vert site.baseurl }}
+[C1S1-pic1]: {{"/assets/images/C1S1-pic1.png" | site.baseurl }}
+[C1S1-pic2]: {{"/assets/images/C1S1-pic2.png" | site.baseurl }}
+[C1S1-pic3]: {{"/assets/images/C1S1-pic3.png" | site.baseurl }}
 
-[C1S2-pic1]: {{"/assets/images/C1S2-pic1.png" \vert site.baseurl }}
-[C1S2-pic2]: {{"/assets/images/C1S2-pic2.png" \vert site.baseurl }}
+[C1S2-pic1]: {{"/assets/images/C1S2-pic1.png" |site.baseurl }}
+[C1S2-pic2]: {{"/assets/images/C1S2-pic2.png" | site.baseurl }}
 
-[C1S3-pic1]: {{"/assets/images/C1S3-pic1.png" \vert site.baseurl }}
-[C1S3-pic2]: {{"/assets/images/C1S3-pic2.png" \vert site.baseurl }}
-[C1S3-pic3]: {{"/assets/images/C1S3-pic3.png" \vert site.baseurl }}
-[C1S3-pic4]: {{"/assets/images/C1S3-pic4.png" \vert site.baseurl }}
+[C1S3-pic1]: {{"/assets/images/C1S3-pic1.png" | site.baseurl }}
+[C1S3-pic2]: {{"/assets/images/C1S3-pic2.png" | site.baseurl }}
+[C1S3-pic3]: {{"/assets/images/C1S3-pic3.png" | site.baseurl }}
+[C1S3-pic4]: {{"/assets/images/C1S3-pic4.png" | site.baseurl }}
 
-[C1S4-pic1]: {{"/assets/images/C1S4-pic1.png" \vert site.baseurl }}
-[C1S4-pic2]: {{"/assets/images/C1S4-pic2.png" \vert site.baseurl }}
-[C1S4-pic3]: {{"/assets/images/C1S4-pic3.png" \vert site.baseurl }}
-[C1S4-pic4]: {{"/assets/images/C1S4-pic4.png" \vert site.baseurl }}
-[C1S4-pic5]: {{"/assets/images/C1S4-pic5.png" \vert site.baseurl }}
-[C1S4-pic6]: {{"/assets/images/C1S4-pic6.png" \vert site.baseurl }}
-[C1S4-pic7]: {{"/assets/images/C1S4-pic7.png" \vert site.baseurl }}
-[C1S4-pic8]: {{"/assets/images/C1S4-pic8.png" \vert site.baseurl }}
-[C1S4-pic9]: {{"/assets/images/C1S4-pic9.png" \vert site.baseurl }}
-[C1S4-pic10]: {{"/assets/images/C1S4-pic10.png" \vert site.baseurl }}
+[C1S4-pic1]: {{"/assets/images/C1S4-pic1.png" | site.baseurl }}
+[C1S4-pic2]: {{"/assets/images/C1S4-pic2.png" | site.baseurl }}
+[C1S4-pic3]: {{"/assets/images/C1S4-pic3.png" | site.baseurl }}
+[C1S4-pic4]: {{"/assets/images/C1S4-pic4.png" | site.baseurl }}
+[C1S4-pic5]: {{"/assets/images/C1S4-pic5.png" | site.baseurl }}
+[C1S4-pic6]: {{"/assets/images/C1S4-pic6.png" | site.baseurl }}
+[C1S4-pic7]: {{"/assets/images/C1S4-pic7.png" | site.baseurl }}
+[C1S4-pic8]: {{"/assets/images/C1S4-pic8.png" | site.baseurl }}
+[C1S4-pic9]: {{"/assets/images/C1S4-pic9.png" | site.baseurl }}
+[C1S4-pic10]: {{"/assets/images/C1S4-pic10.png" | site.baseurl }}
 
-[C1S5-pic1]: {{"/assets/images/C1S5-pic1.png" \vert site.baseurl }}
-[C1S5-pic2]: {{"/assets/images/C1S5-pic2.png" \vert site.baseurl }}
-[C1S5-pic3]: {{"/assets/images/C1S5-pic3.png" \vert site.baseurl }}
-[C1S5-pic4]: {{"/assets/images/C1S5-pic4.png" \vert site.baseurl }}
-[C1S5-pic5]: {{"/assets/images/C1S5-pic5.png" \vert site.baseurl }}
-[C1S5-pic6]: {{"/assets/images/C1S5-pic6.png" \vert site.baseurl }}
-[C1S5-pic7]: {{"/assets/images/C1S5-pic7.png" \vert site.baseurl }}
+[C1S5-pic1]: {{"/assets/images/C1S5-pic1.png" | site.baseurl }}
+[C1S5-pic2]: {{"/assets/images/C1S5-pic2.png" | site.baseurl }}
+[C1S5-pic3]: {{"/assets/images/C1S5-pic3.png" | site.baseurl }}
+[C1S5-pic4]: {{"/assets/images/C1S5-pic4.png" | site.baseurl }}
+[C1S5-pic5]: {{"/assets/images/C1S5-pic5.png" | site.baseurl }}
+[C1S5-pic6]: {{"/assets/images/C1S5-pic6.png" | site.baseurl }}
+[C1S5-pic7]: {{"/assets/images/C1S5-pic7.png" | site.baseurl }}
 
-[C1S6-pic1]: {{"/assets/images/C1S6-pic1.png" \vert site.baseurl }}
-[C1S6-pic2]: {{"/assets/images/C1S6-pic2.png" \vert site.baseurl }}
-[C1S6-pic3]: {{"/assets/images/C1S6-pic3.png" \vert site.baseurl }}
-[C1S6-pic4]: {{"/assets/images/C1S6-pic4.png" \vert site.baseurl }}
+[C1S6-pic1]: {{"/assets/images/C1S6-pic1.png" | site.baseurl }}
+[C1S6-pic2]: {{"/assets/images/C1S6-pic2.png" | site.baseurl }}
+[C1S6-pic3]: {{"/assets/images/C1S6-pic3.png" | site.baseurl }}
+[C1S6-pic4]: {{"/assets/images/C1S6-pic4.png" | site.baseurl }}
