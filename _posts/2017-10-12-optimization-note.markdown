@@ -70,7 +70,7 @@ $$
 3. 对于$\forall \boldsymbol{x}, \boldsymbol{y} \in cl(C)$，易知存在序列$\{ \boldsymbol{x}_k \}, \{ \boldsymbol{y}_k \} \in C$满足$\boldsymbol{x}_k \rightarrow \boldsymbol{x}$和$\boldsymbol{y}_k \rightarrow \boldsymbol{y}$.对于$\forall \alpha \in [0, 1]$，由$C$的凸性知序列$\{ \alpha \boldsymbol{x}_k + (1 - \alpha) \boldsymbol{y}_k \} \in C$，于是该序列的极限$\alpha \boldsymbol{x} + (1 - \alpha) \boldsymbol{y} \in cl(C)$. 
 
 4. 对于$\forall \boldsymbol{x}, \boldsymbol{y} \in int(C)$，易知存在以$\boldsymbol{x}, \boldsymbol{y}$为球心半径为$r$的开球$B(\boldsymbol{x}, r) \subseteq C$和$B(\boldsymbol{y}, r) \subseteq C$. 考虑开球$B(\alpha \boldsymbol{x} + (1 - \alpha) \boldsymbol{y}, r)$ 中的任意一点$\alpha \boldsymbol{x} + (1 - \alpha) \boldsymbol{y} + \boldsymbol{z}$，其中
-$||z|| < r$
+$\vert\vertz\vert\vert < r$
 ，易知有
 
 $$
@@ -108,7 +108,7 @@ $$
 
 $$
 \begin{align*}
-\{ \boldsymbol{x} | \boldsymbol{a}^\top \boldsymbol{x} = b \}
+\{ \boldsymbol{x} \vert \boldsymbol{a}^\top \boldsymbol{x} = b \}
 \end{align*}
 $$
 
@@ -132,7 +132,7 @@ $$
 
 $$
 \begin{align*}
-\{ \boldsymbol{x} | \boldsymbol{a}^\top \boldsymbol{x} = b \}
+\{ \boldsymbol{x} \vert \boldsymbol{a}^\top \boldsymbol{x} = b \}
 \end{align*}
 $$
 
@@ -142,7 +142,7 @@ $$
 
 $$
 \begin{align*}
-\{ \boldsymbol{x} | \boldsymbol{a}^\top \boldsymbol{x} \leq b \}
+\{ \boldsymbol{x} \vert \boldsymbol{a}^\top \boldsymbol{x} \leq b \}
 \end{align*}
 $$ 
 
