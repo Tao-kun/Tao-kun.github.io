@@ -313,7 +313,7 @@ $$
 
 因此，$(\boldsymbol{x}bar, \bar{\boldsymbol{w}}) \in epi(f)$，故$epi(f)$是闭的.
 
-$3\Rightarrow1$：设水平集$S_\gamma$中的序列$\{\boldsymbol{x}_k\}$收敛于$\boldsymbol{x}bar$，于是对于$\forall k$有$(\boldsymbol{x}_k, \gamma) \in epi(f)$，因为$epi(f)$是闭的，故序列$\{(\boldsymbol{x}_k, \gamma)\}$的极限$(\boldsymbol{x}bar, \gamma) \in epi(f)$，即$\boldsymbol{x}bar \in S_\gamma$，故$S_\gamma$是闭的.
+$3\Rightarrow1$：设水平集$S_\gamma$中的序列$$\{\boldsymbol{x}_k\}$$收敛于$$\boldsymbol{x}bar$$，于是对于$$\forall k$$有$$(\boldsymbol{x}_k, \gamma) \in epi(f)$$，因为$$epi(f)$$是闭的，故序列$$\{(\boldsymbol{x}_k, \gamma)\}$$的极限$$(\boldsymbol{x}bar, \gamma) \in epi(f)$$，即$$\boldsymbol{x}bar \in S_\gamma$$，故$$S_\gamma$$是闭的.
 
 一般来说，闭性比下半连续更方便使用，因为下半连续是一个定义域有关的性质，例如函数$f: \mathbb{R}^n \mapsto (-\infty, \infty]$：
 

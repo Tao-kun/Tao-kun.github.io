@@ -102,7 +102,9 @@ i = 1, \dots, m
 \end{align*}
 $$
 
-的正整数，那么向量$\boldsymbol{x}_i, i = 1, \dots, m$必然是线性无关的.反证法，假设向量$\boldsymbol{x}_i$线性相关，那么存在实数$\lambda_1, \dots, \lambda_m$满足$\sum_{i=1}^m \lambda_i \boldsymbol{x}_i = \boldsymbol{0}$且至少有一个$\lambda_i$是正数，考虑线性组合$\sum_{i=1}^m (\alpha_i - \bar{\gamma} \lambda_i) \boldsymbol{x}_i$，其中$\bar{\gamma}$是使得$\alpha_i - \gamma \lambda_i \geq 0$对所有$i$成立的最大的$\gamma$，这个线性组合给出了$\boldsymbol{x}$的一个少于$m$个向量的正组合，矛盾，故向量$\boldsymbol{x}_i, i = 1, \dots, m$必然是线性无关的.
+的正整数，那么向量$$\boldsymbol{x}_i, i = 1, \dots, m$$必然是线性无关的.
+
+反证法，假设向量$$\boldsymbol{x}_i$$线性相关，那么存在实数$$\lambda_1, \dots, \lambda_m$$满足$$\sum_{i=1}^m \lambda_i \boldsymbol{x}_i = \boldsymbol{0}$$且至少有一个$$\lambda_i$$是正数，考虑线性组合$$\sum_{i=1}^m (\alpha_i - \bar{\gamma} \lambda_i) \boldsymbol{x}_i$$，其中$$\bar{\gamma}$$是使得$$\alpha_i - \gamma \lambda_i \geq 0$$对所有$$i$$成立的最大的$$\gamma$$，这个线性组合给出了$$\boldsymbol{x}$$的一个少于$$m$$个向量的正组合，矛盾，故向量$$\boldsymbol{x}_i, i = 1, \dots, m$$必然是线性无关的.
 
 ![C1S2 Pic2][C1S2-pic2]
 
@@ -116,7 +118,7 @@ $$
 \end{align*}
 $$
 
-于是$(\boldsymbol{x}, 1) = (\sum_{i=1}^I \gamma_i \boldsymbol{x}_i, \sum_{i=1}^I \gamma_i) = \sum_{i=1}^I \gamma_i (\boldsymbol{x}_i, 1) \in cone(Y)$，由(a)易知
+于是$$(\boldsymbol{x}, 1) = (\sum_{i=1}^I \gamma_i \boldsymbol{x}_i, \sum_{i=1}^I \gamma_i) = \sum_{i=1}^I \gamma_i (\boldsymbol{x}_i, 1) \in cone(Y)$$，由(a)易知
 
 $$
 \begin{align*}
@@ -142,7 +144,7 @@ Caratheodory's定理是一个很重要的定理，可以此推出一些其它的
 
 **命题1.2.3**：紧集$X$是$\mathbb{R}^n$的子集，其凸包还是紧集.
 
-**证明**：只需证明$conv(X)$中的序列$\{\boldsymbol{x}_k\}$收敛时，其极限$\bar{\boldsymbol{x}} \in conv(X)$即可.由Caratheodory's定理易知序列中的任意$\boldsymbol{x}_k$可表示为$n + 1$个向量$\boldsymbol{x}_{k,1}, \dots, \boldsymbol{x}_{k,n+1}$的凸组合，即 
+**证明**：只需证明$$conv(X)$$中的序列$$\{\boldsymbol{x}_k\}$$收敛时，其极限$$\bar{\boldsymbol{x}} \in conv(X)$$即可.由Caratheodory's定理易知序列中的任意$$\boldsymbol{x}_k$$可表示为$$n + 1$$个向量$$\boldsymbol{x}_{k,1}, \dots, \boldsymbol{x}_{k,n+1}$$的凸组合，即 
 
 $$
 \begin{align*}
@@ -152,6 +154,7 @@ $$
 
 令
 
+<!--
 $$
 \begin{align*}
 \tilde{{\boldsymbol{\alpha}}}_k = \begin{bmatrix} \alpha_{k,1} \\
@@ -162,9 +165,138 @@ $$
 \boldsymbol{x}_{k,n+1} \end{bmatrix} \in \mathbb{R}^{(n+1)n}
 \end{align*}
 $$
+-->
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0.278em 2em 0.278em 2em 0.278em 2em 0.278em 2em 0.278em 2em 0.278em">
+    <mtr>
+      <mtd>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold-italic">&#x03B1;<!-- α --></mi>
+              </mrow>
+              <mo stretchy="false">&#x007E;<!-- ~ --></mo>
+            </mover>
+          </mrow>
+          <mi>k</mi>
+        </msub>
+        <mo>=</mo>
+        <mfenced open="[" close="]">
+          <mtable rowspacing="4pt" columnspacing="1em">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>&#x03B1;<!-- α --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>,</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mo>&#x22EE;<!-- ⋮ --></mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>&#x03B1;<!-- α --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>,</mo>
+                    <mi>n</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mfenced>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi mathvariant="bold-italic">x</mi>
+              <mo stretchy="false">&#x007E;<!-- ~ --></mo>
+            </mover>
+          </mrow>
+          <mi>k</mi>
+        </msub>
+        <mo>=</mo>
+        <mfenced open="[" close="]">
+          <mtable rowspacing="4pt" columnspacing="1em">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi mathvariant="bold-italic">x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>,</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mo>&#x22EE;<!-- ⋮ --></mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi mathvariant="bold-italic">x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mo>,</mo>
+                    <mi>n</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mfenced>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+            <mo stretchy="false">)</mo>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mtd>
+    </mtr>
+  </mtable>
+</math>
 
 由于序列 $\{\tilde{{\boldsymbol{\alpha}}}_k^\top, \tilde{\boldsymbol{x}}_k^\top\}$ 有界，故必存在极限，设为 $(\tilde{{\boldsymbol{\alpha}}}_\infty^\top, \tilde{\boldsymbol{x}}_\infty^\top)$ ，其中 
 
+<!--
 $$
 \begin{align*}
 \tilde{{\boldsymbol{\alpha}}}_\infty = \begin{bmatrix} \alpha_{\infty,1} \\
@@ -175,8 +307,136 @@ $$
 \boldsymbol{x}_{\infty,n+1} \end{bmatrix} \in \mathbb{R}^{(n+1)n}
 \end{align*}
 $$
+-->
 
-显然有 $\sum_{i=1}^{n+1} \alpha_{\infty,i} = 1, \alpha_{\infty,i} \geq 0, i = 1, \dots, n + 1$ ，由于$X$是闭集，故 $\boldsymbol{x}_{\infty, i} \in X, i = 1, \dots, n + 1$ ，再由序列极限 $\bar{\boldsymbol{x}}$ 可表示为 $\bar{\boldsymbol{x}} = \alpha_{\infty,1} \boldsymbol{x}_{\infty,1} + \dots + \alpha_{\infty,n+1} \boldsymbol{x}_{\infty,n+1}$ 可知 $\bar{\boldsymbol{x}} \in conv(X)$ .
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0.278em 2em 0.278em 2em 0.278em 2em 0.278em 2em 0.278em 2em 0.278em">
+    <mtr>
+      <mtd>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold-italic">&#x03B1;<!-- α --></mi>
+              </mrow>
+              <mo stretchy="false">&#x007E;<!-- ~ --></mo>
+            </mover>
+          </mrow>
+          <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+        </msub>
+        <mo>=</mo>
+        <mfenced open="[" close="]">
+          <mtable rowspacing="4pt" columnspacing="1em">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>&#x03B1;<!-- α --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                    <mo>,</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mo>&#x22EE;<!-- ⋮ --></mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>&#x03B1;<!-- α --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                    <mo>,</mo>
+                    <mi>n</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mfenced>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi mathvariant="bold-italic">x</mi>
+              <mo stretchy="false">&#x007E;<!-- ~ --></mo>
+            </mover>
+          </mrow>
+          <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+        </msub>
+        <mo>=</mo>
+        <mfenced open="[" close="]">
+          <mtable rowspacing="4pt" columnspacing="1em">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi mathvariant="bold-italic">x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                    <mo>,</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mo>&#x22EE;<!-- ⋮ --></mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi mathvariant="bold-italic">x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                    <mo>,</mo>
+                    <mi>n</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mfenced>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+            <mo stretchy="false">)</mo>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mtd>
+    </mtr>
+  </mtable>
+</math>
+
+显然有$$\sum_{i=1}^{n+1} \alpha_{\infty,i} = 1, \alpha_{\infty,i} \geq 0, i = 1, \dots, n + 1$$，由于$$X$$是闭集，故$$\boldsymbol{x}_{\infty, i} \in X, i = 1, \dots, n + 1$$，再由序列极限$$\bar{\boldsymbol{x}}$$可表示为$$\bar{\boldsymbol{x}} = \alpha_{\infty,1} \boldsymbol{x}_{\infty,1} + \dots + \alpha_{\infty,n+1} \boldsymbol{x}_{\infty,n+1}$$可知$$\bar{\boldsymbol{x}} \in conv(X)$$.
 
 $X$有界的假设是不可或缺的，否则序列$\{ \tilde{{\boldsymbol{\alpha}}}_k^\top, \tilde{\boldsymbol{x}}_k^\top \}$的极限不一定存在.一个反例，设 
 
