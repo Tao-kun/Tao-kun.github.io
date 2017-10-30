@@ -590,7 +590,7 @@ $$
 \end{align*}
 $$
 
-该命题的一个直接推论是若$f$是凸函数且对于$\forall \boldsymbol{z} \in C$有$\nabla f(\boldsymbol{x}^*)^\top (\boldsymbol{z} - \boldsymbol{x}^*) \geq 0$成立，则$\boldsymbol{x}^*$是$f$的最小值点.进一步，若$\boldsymbol{x}^* \in int(C)$，则$\boldsymbol{x}^*$是$f$的最小值点的充要条件是$\nabla f(\boldsymbol{x}^*) = \boldsymbol{0}$.
+该命题的一个直接推论是若$$f$$是凸函数且对于$$\forall \boldsymbol{z} \in C$$有$$\nabla f(\boldsymbol{x}^*)^\top (\boldsymbol{z} - \boldsymbol{x}^*) \geq 0$$成立，则$$\boldsymbol{x}^*$$是$$f$$的最小值点.进一步，若$$\boldsymbol{x}^* \in int(C)$$，则$$\boldsymbol{x}^*$$是$$f$$的最小值点的充要条件是$$\nabla f(\boldsymbol{x}^*) = \boldsymbol{0}$$.
 
 **命题1.1.12** [**二阶性质**]：凸集$C$是$\mathbb{R}^n$的非空子集，函数$f: C \rightarrow \mathbb{R}$二阶可微，那么
 
