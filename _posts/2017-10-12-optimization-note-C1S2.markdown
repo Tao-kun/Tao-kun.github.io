@@ -294,7 +294,7 @@ $$
   </mtable>
 </math>
 
-由于序列$$\{\tilde{{\boldsymbol{\alpha}}}_k^\top, \tilde{\boldsymbol{x}}_k^\top\}$$有界，故必存在极限，设为$$(\tilde{{\boldsymbol{\alpha}}}_\infty^\top, \tilde{\boldsymbol{x}}_\infty^\top)$$，其中 
+由于序列<!--$$\{\tilde{{\boldsymbol{\alpha}}}_k^\top, \tilde{\boldsymbol{x}}_k^\top\}$$--><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mo fence="false" stretchy="false">{</mo><msubsup><mrow class="MJX-TeXAtom-ORD"><mover><mrow class="MJX-TeXAtom-ORD"><mi mathvariant="bold-italic">&#x03B1;<!-- α --></mi></mrow><mo stretchy="false">&#x007E;<!-- ~ --></mo></mover></mrow><mi>k</mi><mi mathvariant="normal">&#x22A4;<!-- ⊤ --></mi></msubsup><mo>,</mo><msubsup><mrow class="MJX-TeXAtom-ORD"><mover><mi mathvariant="bold-italic">x</mi><mo stretchy="false">&#x007E;<!-- ~ --></mo></mover></mrow><mi>k</mi><mi mathvariant="normal">&#x22A4;<!-- ⊤ --></mi></msubsup><mo fence="false" stretchy="false">}</mo></math>有界，故必存在极限，设为<!--$$(\tilde{{\boldsymbol{\alpha}}}_\infty^\top, \tilde{\boldsymbol{x}}_\infty^\top)$$--><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mo stretchy="false">(</mo><msubsup><mrow class="MJX-TeXAtom-ORD"><mover><mrow class="MJX-TeXAtom-ORD"><mi mathvariant="bold-italic">&#x03B1;<!-- α --></mi></mrow><mo stretchy="false">&#x007E;<!-- ~ --></mo></mover></mrow><mi mathvariant="normal">&#x221E;<!-- ∞ --></mi><mi mathvariant="normal">&#x22A4;<!-- ⊤ --></mi></msubsup><mo>,</mo><msubsup><mrow class="MJX-TeXAtom-ORD"><mover><mi mathvariant="bold-italic">x</mi><mo stretchy="false">&#x007E;<!-- ~ --></mo></mover></mrow><mi mathvariant="normal">&#x221E;<!-- ∞ --></mi><mi mathvariant="normal">&#x22A4;<!-- ⊤ --></mi></msubsup><mo stretchy="false">)</mo></math>，其中 
 
 <!--
 $$
