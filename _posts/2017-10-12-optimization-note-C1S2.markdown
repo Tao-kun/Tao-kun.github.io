@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "《凸优化理论》笔记 - C1S2"
+title:  "C1S2 - 凸包和仿射包"
 date:   2017-10-12 18:04:00 +0800
 tags: [Mathematics]
 ---
 
-# C1S2 - 凸包和仿射包
+《凸优化理论》笔记
+
 这一节主要介绍如何对非凸集进行凸化.
 
 设集合$X$是$\mathbb{R}^n$的非空子集，所有包含$X$的凸集的交集称作$X$的凸包(convex hull)，记为$conv(X)$. 进一步，若$\boldsymbol{x}_1, \dots, \boldsymbol{x}_m \in X$，$m$是一正整数，如下形式的向量：

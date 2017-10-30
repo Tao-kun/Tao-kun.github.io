@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "《凸优化理论》笔记 - C1S1"
+title:  "C1S1 - 凸集和凸函数"
 date:   2017-10-12 18:04:00 +0800
 tags: [Mathematics]
 ---
 
-# C1S1 - 凸集和凸函数
+《凸优化理论》笔记
+
 在优化问题中，凸集(convex set)和凸函数(convex function)是很常见的，它们有一些特殊的结构，通过利用这些结构，可以为设计算法带来很多便利.例如每一个闭凸集都可以看成一系列半空间的交集，以后会提到的割平面法(cutting plane method)就是基于这个想法提出的.但尽管如此，对它们做理论分析却并不容易，因为总有很多例外的情况，使问题变得复杂，例如闭凸集在线性变换下不一定能保持闭凸性(仿射集(affine set)和紧集(compact set)就没有这个问题)，这时最优解是否存在，我们就不能想当然了.因此，我们有必要建立严格的理论来对其进行研究，这自然免不了要定义很多新的概念，本节主要引入凸集和凸函数的概念，以及一些相关的分析.
 
 ![C1S1 Pic1][C1S1-pic1]
@@ -281,11 +282,7 @@ $$
 
 **证明**：如果$f$恒取值$\infty$，那么结论显然成立.不失一般性，设至少存在一个$\boldsymbol{x} \in \mathbb{R}^n$使得$f(\boldsymbol{x}) < \infty$，即$epi(f)$非空，至少存在一个水平集非空.
 
-1$\Rightarrow$2：反证法，假设存在收敛于
-$\boldsymbol{x}bar$
-的序列
-$\{\boldsymbol{x}_k\}$
-满足
+$1\Rightarrow2$：反证法，假设存在收敛于$\boldsymbol{x}bar$的序列$\{\boldsymbol{x}_k\}$满足
 
 $$
 \begin{align*}
@@ -301,9 +298,9 @@ f(\boldsymbol{x}bar) > \gamma > \liminf_{k \rightarrow \infty} f(\boldsymbol{x}_
 \end{align*}
 $$
 
-于是存在序列$\{\boldsymbol{x}_k\}$的一个子序列$\{\boldsymbol{x}_k\}_\mathcal{K}$对于$\forall k \in \mathcal{K}$有$f(\boldsymbol{x}_k) \leq \gamma$，即$\{\boldsymbol{x}_k\}_\mathcal{K} \subseteq S_\gamma$，因为水平集$S_\gamma$是闭的，故$\boldsymbol{x}bar \in S_\gamma$，即$f(\boldsymbol{x}bar) \leq \gamma$，矛盾.
+于是存在序列 ${\boldsymbol{x}_k}$ 的一个子序列 ${\boldsymbol{x}_k}_{\mathcal{K}}$ 对于 $\forall k \in \mathcal{K}$ 有 $f(\boldsymbol{x}_k) \leq \gamma$ ，即 ${\boldsymbol{x}_k}_{\mathcal{K}} \subseteq S_\gamma$ ，因为水平集 $S_\gamma$ 是闭的，故 $\boldsymbol{x}bar \in S_\gamma$ ，即 $f(\boldsymbol{x}bar) \leq \gamma$ ，矛盾.
 
-2$\Rightarrow$3：设$epi(f)$中的序列$\{(\boldsymbol{x}_k, w_k)\}$收敛于$(\boldsymbol{x}bar, \bar{\boldsymbol{w}})$，由上境图的定义知$f(\boldsymbol{x}_k) \leq w_k$，取极限令$k \rightarrow \infty$并结合下半连续的定义知
+$2\Rightarrow3$：设$epi(f)$中的序列$\{(\boldsymbol{x}_k, w_k)\}$收敛于$(\boldsymbol{x}bar, \bar{\boldsymbol{w}})$，由上境图的定义知$f(\boldsymbol{x}_k) \leq w_k$，取极限令$k \rightarrow \infty$并结合下半连续的定义知
 
 $$
 \begin{align*}
@@ -316,7 +313,7 @@ $$
 
 因此，$(\boldsymbol{x}bar, \bar{\boldsymbol{w}}) \in epi(f)$，故$epi(f)$是闭的.
 
-3$\Rightarrow$1：设水平集$S_\gamma$中的序列$\{\boldsymbol{x}_k\}$收敛于$\boldsymbol{x}bar$，于是对于$\forall k$有$(\boldsymbol{x}_k, \gamma) \in epi(f)$，因为$epi(f)$是闭的，故序列$\{(\boldsymbol{x}_k, \gamma)\}$的极限$(\boldsymbol{x}bar, \gamma) \in epi(f)$，即$\boldsymbol{x}bar \in S_\gamma$，故$S_\gamma$是闭的.
+$3\Rightarrow1$：设水平集$S_\gamma$中的序列$\{\boldsymbol{x}_k\}$收敛于$\boldsymbol{x}bar$，于是对于$\forall k$有$(\boldsymbol{x}_k, \gamma) \in epi(f)$，因为$epi(f)$是闭的，故序列$\{(\boldsymbol{x}_k, \gamma)\}$的极限$(\boldsymbol{x}bar, \gamma) \in epi(f)$，即$\boldsymbol{x}bar \in S_\gamma$，故$S_\gamma$是闭的.
 
 一般来说，闭性比下半连续更方便使用，因为下半连续是一个定义域有关的性质，例如函数$f: \mathbb{R}^n \mapsto (-\infty, \infty]$：
 
