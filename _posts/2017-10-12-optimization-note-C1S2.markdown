@@ -438,7 +438,7 @@ $$
 
 显然有$$\sum_{i=1}^{n+1} \alpha_{\infty,i} = 1, \alpha_{\infty,i} \geq 0, i = 1, \dots, n + 1$$，由于$$X$$是闭集，故$$\boldsymbol{x}_{\infty, i} \in X, i = 1, \dots, n + 1$$，再由序列极限$$\bar{\boldsymbol{x}}$$可表示为$$\bar{\boldsymbol{x}} = \alpha_{\infty,1} \boldsymbol{x}_{\infty,1} + \dots + \alpha_{\infty,n+1} \boldsymbol{x}_{\infty,n+1}$$可知$$\bar{\boldsymbol{x}} \in conv(X)$$.
 
-$X$有界的假设是不可或缺的，否则序列$\{ \tilde{{\boldsymbol{\alpha}}}_k^\top, \tilde{\boldsymbol{x}}_k^\top \}$的极限不一定存在.一个反例，设 
+$X$有界的假设是不可或缺的，否则序列<!--${\tilde{{\boldsymbol{\alpha}}}_k^\top, \tilde{\boldsymbol{x}}_k^\top}$--><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow class="MJX-TeXAtom-ORD"><msubsup><mrow class="MJX-TeXAtom-ORD"><mover><mrow class="MJX-TeXAtom-ORD"><mi mathvariant="bold-italic">&#x03B1;<!-- α --></mi></mrow><mo stretchy="false">&#x007E;<!-- ~ --></mo></mover></mrow><mi>k</mi><mi mathvariant="normal">&#x22A4;<!-- ⊤ --></mi></msubsup><mo>,</mo><msubsup><mrow class="MJX-TeXAtom-ORD"><mover><mi mathvariant="bold-italic">x</mi><mo stretchy="false">&#x007E;<!-- ~ --></mo></mover></mrow><mi>k</mi><mi mathvariant="normal">&#x22A4;<!-- ⊤ --></mi></msubsup></mrow></math>的极限不一定存在.一个反例，设 
 
 $$
 \begin{align*}
