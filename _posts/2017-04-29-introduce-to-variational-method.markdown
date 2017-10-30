@@ -117,10 +117,10 @@ $$
 $$
 \begin{align*} 
 \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \frac{\int_a^b (\delta y(x))^2 \mathrm{d} x}{\max_{a \leq x \leq b} |\delta y(x)|}
-&\leq \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \frac{\left( \max_{a \leq x \leq b} |\delta y(x)| \right)^2 (b-a)}{\max_{a \leq x \leq b} |\delta y(x)|} \\
-&= \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} (\max_{a \leq x \leq b} |\delta y(x)| ) (b-a) \\
-&= \lim_{t \rightarrow 0} t (b-a)，\left( 其中 t = \max_{a \leq x \leq b} |\delta y(x)| \right) \\
-&= 0
+& \leq \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} \frac{\left( \max_{a \leq x \leq b} |\delta y(x)| \right)^2 (b-a)}{\max_{a \leq x \leq b} |\delta y(x)|} \\
+& = \lim_{\max_{a \leq x \leq b} |\delta y(x)| \rightarrow 0} (\max_{a \leq x \leq b} |\delta y(x)| ) (b-a) \\
+& = \lim_{t \rightarrow 0} t (b-a)，\left( 其中 t = \max_{a \leq x \leq b} |\delta y(x)| \right) \\
+& = 0
 \end{align*}
 $$
 
