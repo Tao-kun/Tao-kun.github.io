@@ -294,7 +294,7 @@ $$
   </mtable>
 </math>
 
-由于序列 $\{\tilde{{\boldsymbol{\alpha}}}_k^\top, \tilde{\boldsymbol{x}}_k^\top\}$ 有界，故必存在极限，设为 $(\tilde{{\boldsymbol{\alpha}}}_\infty^\top, \tilde{\boldsymbol{x}}_\infty^\top)$ ，其中 
+由于序列$$\{\tilde{{\boldsymbol{\alpha}}}_k^\top, \tilde{\boldsymbol{x}}_k^\top\}$$有界，故必存在极限，设为$$(\tilde{{\boldsymbol{\alpha}}}_\infty^\top, \tilde{\boldsymbol{x}}_\infty^\top)$$，其中 
 
 <!--
 $$
