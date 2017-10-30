@@ -298,7 +298,7 @@ f(\boldsymbol{x}bar) > \gamma > \liminf_{k \rightarrow \infty} f(\boldsymbol{x}_
 \end{align*}
 $$
 
-于是存在序列\$${\boldsymbol{x}_k}$$的一个子序列\$${\boldsymbol{x}_k}_{\mathcal{K}}$$对于\$$\forall k \in \mathcal{K}$$有\$$f(\boldsymbol{x}_k) \leq \gamma$$，即\$${\boldsymbol{x}_k}_{\mathcal{K}} \subseteq S_\gamma$$，因为水平集\$$S_\gamma$$是闭的，故\$$\boldsymbol{x}bar \in S_\gamma$$，即\$$f(\boldsymbol{x}bar) \leq \gamma$$，矛盾.
+于是存在序列$${\boldsymbol{x}_k}$$的一个子序列$${\boldsymbol{x}_k}_{\mathcal{K}}$$对于$$\forall k \in \mathcal{K}$$有$$f(\boldsymbol{x}_k) \leq \gamma$$，即$${\boldsymbol{x}_k}_{\mathcal{K}} \subseteq S_\gamma$$，因为水平集$$S_\gamma$$是闭的，故$$\boldsymbol{x}bar \in S_\gamma$$，即$$f(\boldsymbol{x}bar) \leq \gamma$$，矛盾.
 
 $2\Rightarrow3$：设$epi(f)$中的序列$\{(\boldsymbol{x}_k, w_k)\}$收敛于$(\boldsymbol{x}bar, \bar{\boldsymbol{w}})$，由上境图的定义知$f(\boldsymbol{x}_k) \leq w_k$，取极限令$k \rightarrow \infty$并结合下半连续的定义知
 
