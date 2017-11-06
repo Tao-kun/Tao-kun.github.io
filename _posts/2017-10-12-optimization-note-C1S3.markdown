@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "C1S3 - 相对内部和闭包"
+title:  "[转] C1S3 - 相对内部和闭包"
 date:   2017-10-12 18:04:00 +0800
 tags: [Mathematics]
 ---

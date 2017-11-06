@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "C1S2 - 凸包和仿射包"
+title:  "[转] C1S2 - 凸包和仿射包"
 date:   2017-10-12 18:04:00 +0800
 tags: [Mathematics]
 ---

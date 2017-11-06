@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "C1S4 - 回收锥"
+title:  "[转] C1S4 - 回收锥"
 date:   2017-10-12 18:04:00 +0800
 tags: [Mathematics]
 ---

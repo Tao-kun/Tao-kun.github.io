@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "变分法简介"
+title:  "[转] 变分法简介"
 date:   2017-04-29 16:35:00 +0800
 tags: [Mathematics]
 ---

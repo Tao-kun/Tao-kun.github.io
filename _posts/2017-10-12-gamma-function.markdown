@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Gamma函数是如何被发现的？"
+title:  "[转] Gamma函数是如何被发现的？"
 date:   2017-10-12 21:23:00 +0800
 tags: [Mathematics]
 ---

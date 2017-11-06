@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "C1S6 - 共轭函数"
+title:  "[转] C1S6 - 共轭函数"
 date:   2017-10-12 18:04:00 +0800
 tags: [Mathematics]
 ---

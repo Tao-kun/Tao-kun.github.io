@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "C1S1 - 凸集和凸函数"
+title:  "[转] C1S1 - 凸集和凸函数"
 date:   2017-10-12 18:04:00 +0800
 tags: [Mathematics]
 ---
