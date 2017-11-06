@@ -38,12 +38,12 @@ Q[y(x)]
 \end{align*}
 $$
 
-而言，当$y(x) \in C[a,b]$时，$Q[y(x)]$有定义.则对于任意$\epsilon>0$，只要
+而言，当$y(x) \in C[a,b]$时，$Q[y(x)]$有定义.则对于任意$\varepsilon>0$，只要
 
 $$
 \begin{align*}
 \max_{a \leq x \leq b} |y_1(x) - y(x)|
-< \frac{\epsilon}{b-a}
+< \frac{\varepsilon}{b-a}
 \end{align*}
 $$
 
@@ -54,8 +54,8 @@ $$
 \left| Q[y_1(x)] - Q[y(x)] \right|
 & = \left| \int_a^b \left(y_1(x) - y(x)\right) \mathrm{d} x \right| \\
 & \leq \int_a^b |y_1(x) - y(x)| \mathrm{d} x \\
-& < \int_a^b \frac{\epsilon}{b-a} \mathrm{d} x \\
-& = \epsilon
+& < \int_a^b \frac{\varepsilon}{b-a} \mathrm{d} x \\
+& = \varepsilon
 \end{align*}
 $$
 
@@ -70,7 +70,7 @@ $$
 \end{align*}
 $$
 
-的一切连续曲线$y_1(x)$构成的集合就是$y(x)$的$\epsilon$-邻域，若对于邻域中的任意曲线$y_1(x)$都有
+的一切连续曲线$y_1(x)$构成的集合就是$y(x)$的$\varepsilon$-邻域，若对于邻域中的任意曲线$y_1(x)$都有
 
 $$
 \begin{align*}
@@ -140,8 +140,8 @@ $$
 在推导Euler-Lagrange方程前，我们需要如下的预备定理.
 
 若函数$y=f(x)$在$[a,b]$上连续且$\int_a^b f(x)\eta(x) = 0$，其中$\eta(x)$在$[a,b]$上有连续导数，$\eta(a) = \eta(b)=0$且
-$\left| \eta(x) \right| < \epsilon$
-（$\epsilon \in \mathbb{R^+}$），那么函数$f(x)$在$[a,b]$上恒等于$0$.
+$\left| \eta(x) \right| < \varepsilon$
+（$\varepsilon \in \mathbb{R^+}$），那么函数$f(x)$在$[a,b]$上恒等于$0$.
 
 证明：用反证法，假设存在$x_0 \in (a,b)$使得$f(x_0)>0$，由$f(x)$的连续性知存在正数$\delta$使得当
 $\left| x-x_0 \right| < \delta$
@@ -159,7 +159,7 @@ $$
 $$
 
 显然$\psi(a) = \psi(b) = 0$，此外$\psi(x)$在$[a,b]$上有连续导数(这里先做假设，稍后给出证明)，又选取合适的$A$可使得$\eta(x) = A \psi(x)$满足
-$\left| \eta(x) \right| < \epsilon$
+$\left| \eta(x) \right| < \varepsilon$
 ，故这样的$\eta(x)$满足所有条件，于是
 
 $$
@@ -303,12 +303,12 @@ $$
 \end{align*}
 $$
 
-其中最后一个等号是因为Lagrange中值定理(所以$F$的连续性和可导性是必须的，否则无法使用中值定理).于是由$F$各个偏导数的连续性可知对于$\forall \epsilon > 0$，总可以找到充分小的$\Delta \alpha$使得
+其中最后一个等号是因为Lagrange中值定理(所以$F$的连续性和可导性是必须的，否则无法使用中值定理).于是由$F$各个偏导数的连续性可知对于$\forall \varepsilon > 0$，总可以找到充分小的$\Delta \alpha$使得
 
 $$
 \begin{align*}
 \left|F_{\alpha}(x, y(x) + (\alpha + \theta \Delta \alpha) \eta(x), y'(x) + (\alpha + \theta \Delta \alpha) \eta'(x)) - F_{\alpha}(x, y(x) + \alpha \eta(x), y'(x) + \alpha \eta'(x)) \right|
-< \epsilon
+< \varepsilon
 \end{align*}
 $$
 
@@ -318,11 +318,11 @@ $$
 \begin{align*}
 & \left| \frac{\psi(\alpha + \Delta \alpha) - \psi(\alpha)}{\Delta \alpha} - \int_a^b F_{\alpha}(x, y(x) + \alpha \eta(x), y'(x) + \alpha \eta'(x)) \mathrm{d} x \right| \\ 
 & \leq \int_a^b |F_{\alpha}(x, y(x) + (\alpha + \theta \Delta \alpha) \eta(x), y'(x) + (\alpha + \theta \Delta \alpha) \eta'(x)) - F_{\alpha}(x, y(x) + \alpha \eta(x), y'(x) + \alpha \eta'(x))| \mathrm{d} x \\ 
-& < \epsilon (b - a)
+& < \varepsilon (b - a)
 \end{align*}
 $$
 
-当$\epsilon \rightarrow 0$有$\Delta \alpha \rightarrow 0$，于是
+当$\varepsilon \rightarrow 0$有$\Delta \alpha \rightarrow 0$，于是
 
 $$
 \begin{align*}
