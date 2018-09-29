@@ -7,6 +7,8 @@ tags: [C++, Algorithm]
 
 ## 斐波那契数列
 
+斐波那契数列及其相关算法问题
+
 ### 引入
 
 Leonardo Fibonacci 在描述兔子生长的数目时用上了[这个数列](https://zh.wikipedia.org/wiki/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97)
@@ -49,7 +51,7 @@ $$
 
 [Leetcode-爬楼梯](https://leetcode.com/problems/climbing-stairs/)
 
-[BUAACODING-间隔不为1](https://buaacoding.cn/problem/1442/index)
+[BUAACODING-间隔为5](https://buaacoding.cn/problem/1442/index)
 
 [BUAACODING-过台阶](https://buaacoding.cn/problem/860/index)
 
