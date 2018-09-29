@@ -2,7 +2,7 @@
 layout: post
 title:  "算法-斐波那契数"
 date:   2018-09-29 16:20:00 +0800
-tags: [C++, Algorithm]
+tags: [Mathematics, Algorithm]
 ---
 
 ## 斐波那契数列
