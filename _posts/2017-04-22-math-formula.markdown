@@ -42,40 +42,40 @@ $$\sum_{n=1}^{\infty}\frac{1}{n}=\lim_{k\to\infty}\sum_{n=1}^{k}\frac{1}{n}$$
 ### 排列组合
 + 因子展开（factorial expression）
 
-$$C(n,k)=\frac{n!}{k!(n-k)!}$$
+$$ C(r,k) = \frac{r!}{k!(r-k)!} $$
 
 + 对称（symmetry）
 
-$$C(n,k)=C(n,n-k)$$
+$$ C(r,k) = C(r,r-k) $$
 
 + 吸收（absorption/ extraction）
 
-$$C(r,k)=\frac{r}{k}C(r-1,k-1)$$
+$$ C(r,k) = \frac{r}{k}C(r-1,k-1) $$
 
 + 增加（addition/ induction）
 
-$$C(r,k)=C(r-1,k)+C(r-1,k-1)$$
+$$ C(r,k) = C(r-1,k)+C(r-1,k-1) $$
 
 + 上标（upper negation）
 
-$$C(r,k)=(-1)^kC(k-r-1,k)$$
+$$ C(r,k) = (-1)^kC(k-r-1,k) $$
 
 + 三项式（trinomial revision）
 
-$$C(r,m)C(m,k)=C(r,k)C(r-k,m-k)$$
+$$ C(r,m)C(m,k) = C(r,k)C(r-k,m-k) $$
 
 + 二项式定理（binomial theorem）
 
-$$\sum_k C(r,k) x^k y^{r-k}=(x+y)^r$$
+$$ \sum_k C(r,k) x^k y^{r-k} = (x+y)^r $$
 
 + 平行叠加（parallel summation）
 
-$$\sum_{k \leq n} C(r+k,k)=C(r+n+1,n)$$
+$$ \sum_{k \leq n} C(r+k,k) = C(r+n+1,n) $$
 
 + 上叠加（upper summation）
 
-$$\sum_{0 \leq k \leq n} C(k,m)=C(n+1,m+1)$$
+$$ \sum_{0 \leq k \leq n} C(k,m) = C(n+1,m+1) $$
 
 + 范德蒙恒等式/ 范德蒙德卷积（Vandermonde's identity/ Vandermonde convolution）
 
-$$\sum_k C(r,k)C(s,n-k)=C(r+s,n)$$
+$$ \sum_k C(r,k) C(s,n-k) = C(r+s,n) $$
