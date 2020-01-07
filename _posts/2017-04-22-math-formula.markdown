@@ -40,6 +40,9 @@ where $\vec 0$ denotes the zero vector.
 $$\sum_{n=1}^{\infty}\frac{1}{n}=\lim_{k\to\infty}\sum_{n=1}^{k}\frac{1}{n}$$
 
 ### 排列组合
+
+来自于[知乎](https://www.zhihu.com/question/56883195/answer/232145597)
+
 + 因子展开（factorial expression）
 
 $$ C(r,k) = \frac{r!}{k!(r-k)!} $$
