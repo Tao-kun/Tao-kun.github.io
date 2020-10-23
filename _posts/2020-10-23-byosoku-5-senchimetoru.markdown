@@ -5,7 +5,7 @@ date:   2020-10-23 18:20:00 +0800
 ---
 
 <p>
-これ<ruby>以上<rt>いじょう</rt></ruby><ruby>何<rt>なに</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>えば<ruby> 心<rt>こころ</rt></ruby>は<ruby>許<rt>ゆる</rt></ruby>されるの
+これ<ruby>以上<rt>いじょう</rt></ruby><ruby>何<rt>なに</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>えば <ruby>心<rt>こころ</rt></ruby>は<ruby>許<rt>ゆる</rt></ruby>されるの
 <br />
 
 どれ<ruby>程<rt>ほど</rt></ruby>の<ruby>痛<rt>いた</rt></ruby>みならば もういちど<ruby>君<rt>きみ</rt></ruby>に<ruby>会<rt>あ</rt></ruby>える
